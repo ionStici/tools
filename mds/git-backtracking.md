@@ -1,102 +1,83 @@
-[&larr; Back](./README.md)
-
 # Git Backtracking
-
-## Table of Content
-
-- [HEAD and Checkout](#head-and-checkout)
-- [Restore](#restore)
-- [Reset](#reset)
-- [Revert](#revert)
-- [Overview](#overview)
-
-<br>
 
 ## HEAD and Checkout
 
-**HEAD** is a reference to the current active branch.
+**HEAD** is a reference to the latest commit in the current branch. When you make new commits, HEAD moves forward with each commit.
 
-**`checkout`** can be used to create branches, switch to new branches, restore files, and undo history.
+When you switch branches, **HEAD** moves to point to the tip of the new branch.
 
-- `git checkout 0321e26` when we checkout a particular commit, HEAD is "detached" from any branch, and it will now point to that particular commit, where you can inspect it.
+- `git checkout [commit-hash]` moves **HEAD** to the specified commit. This results in a "detached" HEAD state, meaning changes you make will not belong to any branch until you decide to create one.
 
-- `git switch master` reattach HEAD to a branch.
+  By pointing **HEAD** to a specific commit, we can examine previous versions of the project or even commence new changes from that particular commit.
 
-### New changes while in detached HEAD
+- `git switch master` reattaches **HEAD** to the **master** branch.
 
-Suppose you want to go back to an old commit and make some new changes:
+### Checkout workflow
 
-- `git checkout 0321e26` checkout the old commit. Now in detached HEAD state.
+If you want to go back to an old commit and make some changes:
 
-- `git switch -c branch_name` while in detached HEAD, make a new branch and switch to it.
+1. `git checkout [commit-hash]` will make HEAD point to a particular previous commit (detached HEAD state).
 
-  HEAD is now back to pointing at a branch reference.
+2. `git branch -d new-branch` creates a new branch from the detached HEAD state and switches to it, this will result in HEAD pointing back to a branch.
 
-- Now on the new branch, commit your new changes.
+3. Commit the required changes to `new-branch` and switch to **master** branch.
 
-- What we did? We went back to an old commit and made a new branch based on it.
+4. `git merge new-branch --no-edit` merge your work into the master branch (without prompting for a merge commit message).
 
-### Reference relatively previous commits
-
-`git checkout HEAD~1` reference previous commits relative to a particular commit.
-
-- `HEAD~1` refers to the commit before HEAD
-- `HEAD~2` refers to 2 commits before HEAD
+In summary, we reverted to an old commit, created a new branch at that point, made changes, and merged these changes bac into the **master** branch.
 
 ### Discard Changes
 
 Restore a file in your working directory to look exactly as it did right after the last commit.
 
-`git checkout HEAD file.txt` this will revert file.txt's changes back to HEAD.
+- `git checkout HEAD file.txt` this will discard the changes made to file.txt until after the last commit.
 
-<br>
+## git restore
 
-## Restore
+`git restore` is a tool for reverting changes in the working directory and the staging area.
 
-Alternative to some of the uses for `checkout`.
+- `git restore file.txt` will revert `file.txt` to its state at the last commit.
 
-- `git restore file.txt` restore a file to the contents in the HEAD. This restores using HEAD as the default source.
+- `git restore --source=4e2a39b file.txt` will restore `file.txt` to its state at the specified commit `4e2a39b`. It’s a way to view or test an old version of a file without altering the current branch.
 
-- `git restore --source HEAD~1 file.txt` restore the contents of a file to its state from the commit prior to HEAD.
+- `git restore --staged file.txt` will unstage `file.txt`
 
-  We can also use a particular commit hash as the source.
+## git reset
 
-- `git restore --staged file.txt` remove a file from the staging area.
+`git reset` is used to undo changes by altering the commit history up to a specified point.
 
-<br>
+- `git reset --mixed 5d69206` will move the current branch pointer (HEAD) back to the commit `5d69206`. Commits after this point are not deleted, but become "orphaned" and can be lost if not referenced by another branch or tag.
 
-## Reset
+  **Staging Area:** is reset to the state of the specified commit.
 
-Undo commits: Reset the repository back to a specific commit. The commits are gone.
+  **Working Directory:** is not touched.
 
-- `git reset HEAD file.txt` this removes the file from the staging area.
+  **Use Case:** When you want to undo a `git add` and leave the working directory unchanged.
 
-- `git reset 5d69206` rewind to a previous commit. HEAD is now set to the specified previous commit.
+- `git reset --soft 5d69206` will move the branch pointer back as above, but it keeps the changes from the "orphaned" commits in the staging area, ready to be re-committed if necessary.
 
-  As input we use the first 7 SHA characters of a previous commit.
+  **Staging Area:** is not modified.
 
-  The commits that came after the one you reset to are gone, this changes the project's repository history.
+  **Working Directory:** is not touched.
 
-- `git reset --hard 5d69206` undo the commits AND the actual changes in your files.
+  **Use Case:** When you want to undo a commit or several commits but want to keep the changes for a re-commit (essentially rewriting the commit history).
 
-<br>
+- `git reset --hard 5d69206` will move the branch pointer back and discard any changes in the working directory and staging area, aligning the project's working state with that of the `5d69206` commit.
 
-## Revert
+  All changes in the working directory will be discarded sinse the specified commit. The state of your files will match exactly what was in the `hash` commit.
 
-- `git reset` moves the branch pointer backwards, eliminating commits.
-- `git revert 5d69206` creates a brand new commit which reverses the changes from a commit. Requries new commit message.
+  **Staging Area:** is reset just like with a `--mixed` reset.
 
-If you want to reverse some commits that other people already have on their machines - **use revert**.
+  **Working Directory:** All changes in the working directory will be discarded sinse the specified commit. The state of your files will match exactly what was in the `hash` commit.
 
-If you want to reverse commits that you haven't shared with others - **use reset** and no one will know.
+  **Use Case:** When you need to discard all your current changes and fully revert to the state of a specific commit
 
-<br>
+### Unstage with reset
 
-## Overview
+- `git reset HEAD file.txt` will unstage `file.txt` without altering the current commit history.
 
-- `git checkout HEAD file.txt` discard changes in the working directory
-- `git reset HEAD file.txt` unstage file changes
-- `git reset commit_SHA` resets to a previous commit in your commit history.
-- `git show HEAD` logs details about the most recent commit from the current branch.
+## git revert
 
-<br>
+`git revert` creates a new commit that undoes the changes introduced in a previous commit without altering the project's history.
+
+- `git revert 5d69206` will create a new commit that is the inverse of the `5d69206` commit. This doesn't remove the original commit but instead applies changes that cancel out the effects of that commit.

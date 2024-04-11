@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # Open Source
 
 ## Open Source Overview
@@ -11,8 +9,6 @@ Every active open source software project has one or more **maintainers**. Besid
 Open Source provides a standard way of implementing common features that the entire developer community can build, test, and maintain together. Many of the commonly used tools in the industry, such as operating systems, internet browsers, and coding languages, are open source projects.
 
 Open source presents important opportunities for develoeprs. Working on an open source project is a great way to network with and learn coding and communication skills from software developers all over the world.
-
-<br>
 
 ## Open Source Repository Docs
 
@@ -37,8 +33,6 @@ Standard practice: write a project overview inside a README.md file, which conta
 - The project name -> What the project does
 - How to get started contributing to the project
 - Links to other relevant documentation, such as architecture overviews
-
-<br>
 
 ## Contributing to an Open Source Project
 
@@ -73,8 +67,6 @@ Safari 16
 
 The label **good first issue** indicates that a GitHub issue is suitable for new contributors.
 
-<br>
-
 ### Contributing Documentation
 
 Another type of open source contribution is to write documentation.
@@ -86,8 +78,6 @@ Types of documentation:
 - **Usage guide:** a more detailed explanation of how to use all of the project’s features.
 - **Contribution guide:** an explanation of how to set up the project on a local machine for the purpose of contributing code.
 
-<br>
-
 ### Contributing Code
 
 Before writing our first code contribution, good idea to first read through the issues in the issue tracker. Many project maintainers will put the “good first issue” label on issues that they think are best suited for beginners.
@@ -96,8 +86,6 @@ The issue tracker will also show you which issues are **assigned** – meaning t
 
 If you’ve found an issue you want to work on but don’t know where to start, it’s okay to ask for help! Many project maintainers and experienced contributors are willing to pair program with newcomers. Leave a comment on the issue asking if anybody would be willing to pair, and don’t get discouraged if you don’t hear back immediately. Open source maintainers are often busy, and it may take them some time to reply.
 
-<br>
-
 ### Other Ways to Contribute
 
 - Review contributions
@@ -105,12 +93,8 @@ If you’ve found an issue you want to work on but don’t know where to start, 
 - Respond to questions relating to the project on StackOverflow or Reddit
 - Make video tutorials or host workshops for the project
 
-<br>
-
 ### Tips to create a strong contribution
 
 - **Carefully read any available guidelines.** If a project has contribution guidelines, be sure to read them over and follow any instructions provided. This will help you avoid any common pitfalls that might cause your contribution to be rejected.
 - **Ask for feedback.** Before you invest a lot of time in a contribution, talk to the maintainers about what you have in mind. They may give you some helpful guidance.
 - **Look at other contributions.** Read through other issues or pull requests, especially the ones that have already been accepted, and use them as guidance while crafting your own contributions.
-
-<br>

@@ -1,7 +1,5 @@
 # Command Line Interface
 
-[Command line crash course | MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
-
 ## Introduction
 
 **Terminal and Command Line** - terms used interchangeably. Technically, a _terminal_ is a software that starts and connects to a shell. The _command line_ is the literal line where you enter commands and the cursor blinks.
@@ -27,8 +25,6 @@ In the terminal, the first things you see is `$` or `%`. This is called a _shell
 
 MacOSX is a Unix OS and its command line is 99.9% the same as any Linux distribution. **bash** is your default shell and you can compile all of the same programs and utilities.
 
-<br>
- 
 ## Filesystem
 
 When we use the command line, we refer to folders as **directories**.
@@ -38,8 +34,6 @@ Files and directories on your computer are organized into a **filesystem**.
 **A Filesystem** organizes a computer's files and directories into a tree structure.
 
 The first directory in the filesystem is the root directory, it is the parent of all other directories and files in the file system.
-
-<br>
 
 ## Bash
 
@@ -63,12 +57,6 @@ We can access the CLI on MacOS through the "Terminal" application.
 
 Windows has a different CLI, called **Command Prompt**.
 
-Because of the strenght of the open source community and the tools they provide, mastering **Bash** is a better investment than mastering Command Prompt.
+Because of the strength of the open source community and the tools they provide, mastering **Bash** is a better investment than mastering Command Prompt.
 
 For windows we should install **git bash** instead.
-
-<br>
-
-Many terminal commands allow you to use **asterisks as "wild card" characters**, meaning "any sequence of characters". This allows you to run an operation against a potentially large number of files at once, all of which match the specified pattern.
-
-`rm draft-*.md` would delete all files that start with `draft-` and end with `.md`

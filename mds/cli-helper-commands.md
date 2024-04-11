@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # Helper Commands
 
 - `clear` clear the terminal, aesthetic reasons.

@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # Markdown
 
 - [Markdown Guide](https://www.markdownguide.org/)

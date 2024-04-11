@@ -1,8 +1,4 @@
-[&larr; Back](./README.md)
-
-# CLI Navigation
-
-## Commands
+# CLI Navigation Commands
 
 - `pwd` **"print working directory"** - outputs the name of the directory you are currently in.
 
@@ -10,7 +6,7 @@
 
   `cd` takes a directory name as an argument and switches into that directory.
 
-  `cd ../..` use to dots `..` to move back one directory.
+  `cd ../..` use two dots `..` to move back one directory.
 
   `cd /Users/Mac/Desktop` navigating the filesystem from the root.
 
@@ -19,5 +15,3 @@
 - `touch folder/hello.txt` - create new files.
 
   `touch index.html style.css script.js` we can create multiple files in one line.
-
-<br>

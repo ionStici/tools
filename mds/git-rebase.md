@@ -1,27 +1,59 @@
-[&larr; Back](./README.md)
-
 # Git Rebase
 
-## Rebase as an alternative to Merging
+## git merge
 
-Rebasing can be thought as moving the base of a branch onto a different position.
+`git merge` combines changes from one branch into another branch.
 
-If we have a feature branch with a bunch of commits, instead of merging it to main, in which other commits have meanwhile made, we can **rebase** the feature branch onto the master branch, and keep the git commit history clean and easy to follow.
+- When we merge two branches, the existing branches are not changed. Instead, a new "merge commit" is created.
+- The original history of both branches remains intact and visible.
+- Commonly used in scenarios where you want to incorporate changes from one branch into another while keeping the history.
 
-By **rebasing** the new feature branch onto main, we more all the changes made from feature branch to the front of main and incorporate the new commits by rewriting its history.
-
-_Instead of using a merge commit, rebasing rewrites history by **creating new commits** for each of the original feature branch commits._
+Suppose you have two branches, **feature** and **master**.
 
 ```
-git switch feature
-git rebase master
+A - - B - - C  master
+             \
+              D - - E  feature
 ```
 
-Why Rebase? It eliminates unnecessary merge commits requried by git merge. We end up with a linear project history.
+After you `git merge feature` while on `master`, it looks like this:
 
-**Consider:** You do not want to rewrite any git history that other people already have. It's a pain to reconcile the alternate histories. **Preferably, rebasing should be used locally.** Don't rebase after something has been pushed.
+```
+A - - B - - C - - - - F  master
+             \       /
+              D - - E
+```
 
-<br>
+Here, `F` is a new merge commit.
+
+## git rebase
+
+Rebasing is used to integrate (not combine) commits from a branch to another.
+
+- Rebasing rewrites the commit history by applying the commits from a branch onto the tip of another branch.
+- It makes history linear by placing all the commits from the rebased branch sequentially before the current tip of the branch.
+- No new merge commits are created if there are no conflicts.
+- Preferred in situations where you want a cleaner, linear history. It's also used for cleaning up local commits before pushing them to a shared repository.
+
+```
+A - - B - - C  master
+             \
+              D - - E  feature
+```
+
+Suppose we want to rebase the commits from the **feature** branch to **master**, then while on the **master** branch run:
+
+```
+git rebase feature
+```
+
+This will lead to:
+
+```
+A - - B - - C - D' - E'  master
+```
+
+Internally, Git accomplishes this by creating new commits and applying them to the specified base, so `D'` and `E'` are actually entirely new commits.
 
 ## Rebasing as a cleanup tool
 
@@ -40,5 +72,3 @@ In our text editor, we'll see a list of commits alongside a list of commands tha
 - `edit` - use the commit, but stop for amending
 - `fixup` - use commit contents but meld it into previous commit and discard the commit message
 - `drop` - remove commit
-
-<br>

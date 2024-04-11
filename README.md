@@ -1,81 +1,95 @@
 # Git and GitHub
 
-### Git
+## Refresh
 
-- [**Introduction**](./mds/git-intro.md)
-- [**Git Basics**](./mds/git-basics.md)
+- [CLI Exercises](./mds/cli-exercise.md)
+- [Git Exercises](./mds/git-project.md)
+- [GitHub Exercises](./mds/gh-exercise.md)
+- [GitHub Repository](./mds/gh-repo-todos.md)
 
-<div></div>
+## Git
 
-- [**Git Branching**](./mds/git-branching.md)
-- [**Git Backtracking**](./mds/git-backtracking.md)
-
-<div></div>
-
-- [**Git Stashing**](./mds/git-stashing.md)
-- [**Git Rebase**](./mds/git-rebase.md)
+- [Introduction](./mds/git-intro.md)
+- [Git Basics](./mds/git-basics.md)
 
 <div></div>
 
-- [**Remote and Push**](./mds/git-remote-push.md)
-- [**Fetch and Pull**](./mds/git-fetch-pull.md)
+- [Git Branching](./mds/git-branching.md)
+- [Git Backtracking](./mds/git-backtracking.md)
 
 <div></div>
 
-- [**The .gitignore file**](./mds/git-ignore.md)
-- [**Git Aliases**](./mds/git-aliases.md)
+- [Git Stashing](./mds/git-stashing.md)
+- [Git Rebase](./mds/git-rebase.md)
 
 <div></div>
 
-- [**Git Tags**](./mds/git-tags.md)
-- [**About Git**](./mds/about-git.md)
-
-### GitHub
-
-- [**GitHub Intro**](./mds/github-intro.md)
-- [**GitHub Pages**](./mds/github-pages.md)
+- [Remote and Push](./mds/git-remote-push.md)
+- [Fetch and Pull](./mds/git-fetch-pull.md)
 
 <div></div>
 
-- [**Pull Requests**](./mds/pull-requests.md)
-- [**Forking a Repo**](./mds/forking.md)
+- [The .gitignore file](./mds/git-ignore.md)
+- [Git Aliases](./mds/git-aliases.md)
 
 <div></div>
 
-- [**Issues & Projects**](./mds/github-issues-projects.md)
-- [**GitHub CLI**](./mds/github-cli.md)
+- [Git Tags](./mds/git-tags.md)
+- [About Git](./mds/about-git.md)
+
+## GitHub
+
+- [GitHub Intro](./mds/github-intro.md)
+- [GitHub Pages](./mds/github-pages.md)
 
 <div></div>
 
-- [**Code Reviews**](https://google.github.io/eng-practices/)
-- [**GitHug Actions**](./mds/github-actions.md)
-
-<!-- - [**Git & GitHub** - Version Control System & Repo Hosting](./git-github/README.md) -->
-
-<!-- Project Documentation -->
-
-<!-- ### Terminal
-
-- [**CLI Introduction**](./command-line-interface.md)
-- [**The ls command**](./cli-ls.md)
+- [Pull Requests](./mds/pull-requests.md)
+- [Forking a Repo](./mds/forking.md)
 
 <div></div>
 
-- [**CLI Navigation**](./cli-navigation.md)
-- [**CLI Manipulation**](./cli-manipulation.md)
-- [**Redirecting Input / Output**](./cli-redirect.md)
+- [Issues & Projects](./mds/github-issues-projects.md)
+- [GitHub CLI](./mds/github-cli.md)
 
 <div></div>
 
-- [**CL Env Configuration**](./cl-env-config.md)
-- [**Helper Commands**](./cli-helper-commands.md) -->
+- [Code Reviews](https://google.github.io/eng-practices/)
+- [GitHug Actions](./mds/github-actions.md)
 
-### Other
+## Essentials
 
-- [**Markdown**](./mds/markdown.md)
-- [**README Files**](./mds/readme-files.md)
-- [**Open Source**](./mds/open-source.md)
+- [Markdown](./mds/markdown.md)
+- [README Files](./mds/readme-files.md)
+- [Open Source](./mds/open-source.md)
 
-<br>
+## Terminal
 
-<!-- [Merge Repositories](https://stackoverflow.com/questions/1425892/how-do-you-merge-two-git-repositories) -->
+- [CLI Introduction](./mds/command-line-interface.md)
+- [The `ls` command](./mds/cli-ls.md)
+
+<div></div>
+
+- [CLI Navigation](./mds/cli-navigation.md)
+- [CLI Manipulation](./mds/cli-manipulation.md)
+- [Redirecting Input / Output](./mds/cli-redirect.md)
+
+<div></div>
+
+- [CL Env Configuration](./mds/cl-env-config.md)
+- [Helper Commands](./mds/cli-helper-commands.md)
+- [iTerm2 (rec.)](https://iterm2.com/)
+
+## Vim
+
+- [Vim Introduction](./mds/vim.md)
+
+## VS Code
+
+- [Visual Studio Code](./mds/vs-code.md)
+
+<!-- npm and npm scripts -->
+
+## Homebrew
+
+- [Homebrew](./mds/brew.md)

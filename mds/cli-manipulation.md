@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # CLI Manipulation
 
 _Copy, move, remove files and directories using the command line._
@@ -45,18 +43,3 @@ _Copy, move, remove files and directories using the command line._
   `rm draft-*.md` would delete all files that start with `draft-` and end with `.md`
 
   This allows you to run an operation against a potentially large number of files at once, all of which match the specified pattern.
-
-<br>
-
-## Review
-
-- `cp` copies files
-- `mv` moves and renames files
-- `rm` removes files
-- `rm -r` removes directories
-
-<div></div>
-
-- Wildcards are useful for selecting groups of files and directories.
-
-<br>

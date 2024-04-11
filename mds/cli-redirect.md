@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # Redirecting Input / Output
 
 Through **redirection** you can direct input and output of a command to and from other files and programs, and chain commands together in a pipeline.
@@ -9,8 +7,6 @@ Through **redirection** you can direct input and output of a command to and from
 - _"standard error"_ - abbreviated as **stderr** - is an error message outputted by a failed process.
 
 How does redirection work? e.g. `echo "Hello" > hello.txt` The `>` command redirects the standard output to a file. Here, "Hello" is entered as standard input, and is then redirected to the file "hello.txt" by `>`. If the file "hello.txt" doesn't exists when you use this command, then it will create it.
-
-<br>
 
 ## `>`
 
@@ -22,8 +18,6 @@ Here, the standard output of `cat hello.txt` is redirected to `file.txt`
 
 Consider that `>` will overwrite all original content in "file.txt"
 
-<br>
-
 ## `>>`
 
 `cat hello.txt >> file.txt`
@@ -31,8 +25,6 @@ Consider that `>` will overwrite all original content in "file.txt"
 `>>` takes the standard output of the command on the left and appends (add) it to the file on the right.
 
 Above, the content of "hello.txt" will be added to "file.txt" without changing its original content.
-
-<br>
 
 ## `<`
 
@@ -42,11 +34,9 @@ Above, the content of "hello.txt" will be added to "file.txt" without changing i
 
 Above, "hello.txt" is the standard input for the `cat` command, the standard output appears in the terminal.
 
-<br>
-
 ## `|`
 
-`|` is a **pipe**, it takes the standard output of the command on the left, and _pipes_ it as standard input to the command on the right. This of this as _"command to command"_ redirection.
+`|` is a **pipe**, it takes the standard output of the command on the left, and _pipes_ it as standard input to the command on the right. Think of this as _"command to command"_ redirection.
 
 - `cat hello.txt | wc`
 
@@ -55,8 +45,6 @@ Above, "hello.txt" is the standard input for the `cat` command, the standard out
 - `cat < hello.txt | wc | cat >> hello.txt`
 
   Multiple `|` can be chained together. Here, the standard output of `cat < hello.txt` is piped to `wc`, then the standard output of `wc` is piped to `cat`, which redirects the standard output to "hello.txt".
-
-<br>
 
 ## `sort`
 
@@ -68,21 +56,17 @@ Above, "hello.txt" is the standard input for the `cat` command, the standard out
 
 Here, the command takes the standard output from `cat hello.txt` and pipes it to `sort`, which in turn redirects the output to a new file named "sortedhello.txt".
 
-<br>
-
 ## `uniq`
 
 `uniq` stands for **unique**, it filters out adjacent, duplicate lines in a file.
 
 - `uniq hello txt`
 
-Consider: only adjacent up and down duplicates are removed, rest duplicated will remain. To fix this, we can first sort them, and only then remove duplicates:
+Consider: only adjacent up and down duplicates are removed, rest duplicates will remain. To fix this, we can first sort them, and only then remove duplicates:
 
 - `sort hello.txt | uniq | cat`
 
   By piping `sort hello.txt` to `uniq`, all duplicate lines are alphabetized (and thereby made adjacent) and filtered out.
-
-<br>
 
 ## `grep`
 
@@ -103,8 +87,6 @@ Consider: only adjacent up and down duplicates are removed, rest duplicated will
   `grep -Rl` searches all files in a directory and outputs only filenames with matched results (no lines).
 
 Note that we don't use quotes for the string argument in our command.
-
-<br>
 
 ## `sed`
 
@@ -130,8 +112,6 @@ Note that we don't use quotes for the string argument in our command.
 
   To rewrite the actual file, we need to use the `-i` option.
 
-<br>
-
 ## Review
 
 **Redirection** reroutes standard input, standard output, and standard error.
@@ -149,5 +129,3 @@ _Useful commands when combined with redirection commands:_
 - `uniq` : filters duplicate, adjacent lines of text.
 - `grep` : searches for a text pattern and outputs it.
 - `sed` : searches for a text pattern, modifies it, and outputs it.
-
-<br>

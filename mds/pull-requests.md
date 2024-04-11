@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # Pull Request
 
 [**Pull Requests Documentation**](https://docs.github.com/pull-requests)
@@ -17,8 +15,6 @@ _Pull Request Workflow:_
 3. Open a pull request using the feature branch just pushed up to GitHub
 4. Wait for the PR to be approved and merged.
 
-<br>
-
 ## In Detail
 
 Pull requests allow a streamlined way for project team members to review the code of new features and bug fixes before it is merged to the main branch.
@@ -33,8 +29,6 @@ Any further commits we make to the source branch will automatically be reflected
 
 GitHub will keep this pull request in history as a record of the code change, the contribution, and the discussion that took place.
 
-<br>
-
 ## Pull Request Structure
 
 - Concisely explain the purpose of the pull request in the title. "Add this feature", "Fix this bug"
@@ -48,5 +42,3 @@ GitHub will keep this pull request in history as a record of the code change, th
 - Keep pull requests small and fast. Reduce the size of pull requests and respond to reviews quickly.
 
 - Split big features into smaller parts, this will speed up review time.
-
-<br>

@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # Git Behind the Scenes
 
 Git is a **key-value data store**. We can insert any kind of content into a git repo, and git will hand us back a unique key we can later use to retrieve that content. These keys that we get back are SHA-1 checksums.
@@ -28,8 +26,6 @@ Git is a **key-value data store**. We can insert any kind of content into a git 
 
   The files are all compressed and encrypted, so they won't look like much.
 
-<br>
-
 ## 4 types of Git objects
 
 - **Annotated tag**
@@ -41,5 +37,3 @@ Git is a **key-value data store**. We can insert any kind of content into a git 
   Each entry in a tree contains the SHA-1 hash of a blob of tree, as well as the mode, type, and filename.
 
 - **Commit** objects combine a tree object along with information about the context that led to the current tree. Commits store a reference to parent commit(s), the author, the commiter, and the commit message.
-
-<br>

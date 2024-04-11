@@ -1,10 +1,10 @@
-[&larr; Back](./README.md)
-
 # Git Branching
 
 Create **branches** to experiment with versions of a project. We can work with a branch only, and not affecting the **master** default branch until we decide to merge our changes. Initially, the git repo has only the **master** or **main** branch.
 
-- `git branch -v` will show in which branch we are - `* master` the asterisk is showing the current branch.
+- `git branch` will show in which branch we are
+
+  `* master` the asterisk is showing the current branch.
 
 - `git branch branch_name` create and name a new branch.
 
@@ -12,7 +12,7 @@ Create **branches** to experiment with versions of a project. We can work with a
 
 - `git checkout branch_name` (old) switch between branches. Future commits belong to the active branch.
 
-- `git swtich -c branch_name` (new) switch between branches. The `-c` flag creates a branch at once.
+- `git switch -c branch_name` (new) switch between branches. The `-c` flag creates a branch at once.
 
 - `git merge branch_name` merge a branch into the **master** branch.
 
@@ -22,17 +22,13 @@ Create **branches** to experiment with versions of a project. We can work with a
 
 - `git branch -r` to view remote branches our repo knows about.
 
-<br>
-
 ## Overview
 
 - `git branch` list all branches
 - `git branch branch_name` create a new branch
-- `git checkout branch_name` switch from one branch to another
+- `git switch branch_name` switch from one branch to another
 - `git merge branch_name` merge changes from a branch to master
 - `git branch -d branch_name` delete a branch
-
-<br>
 
 ## Merge Conflict
 
@@ -60,5 +56,3 @@ branch_name version of line
 ```
 
 Here, git asks us which version of the file to keep. Decide which branch's content you want to keep in each conflict. Or keep the content from both. Edit the file and remove the conflict markers. Lastly, add your changes and then make a commit.
-
-<br>

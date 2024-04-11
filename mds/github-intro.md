@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # GitHub Introduction
 
 [**GitHub**](https://github.com/) is a hosting platform for git repositories that helps people share and collaborate.
@@ -11,8 +9,6 @@ _Why GitHub?_
 - **Exposure** - Your GitHub profile acts as a resume in the hiring process.
 - **Stay Up To Date** - Being active on GitHub is the best way to stay up to date with the projects and tools you rely on.
 
-<br>
-
 ## Hosting on GitHub
 
 How do we get our code on GitHub?
@@ -21,7 +17,7 @@ How do we get our code on GitHub?
 
 1. Create a new repo on GitHub
 2. Connect your local repo (add a remote)
-3. Push up your changes yo GitHub
+3. Push up your changes to GitHub
 
 **Option 2:** _Start from Scratch._ If you haven't begun work on your local repo..
 
@@ -29,8 +25,6 @@ How do we get our code on GitHub?
 2. Clone it down to your local machine
 3. Do some work locally
 4. Push up your changes to GitHub
-
-<br>
 
 ## Pushing a local Repo to GitHub
 
@@ -44,8 +38,6 @@ How do we get our code on GitHub?
 
 - At this point, you should be able to see your local repo hosted on GitHub.
 
-<br>
-
 ## Cloning
 
 We can clone a remote repository hosted on GitHub, all we need is the repo URL.
@@ -57,8 +49,6 @@ Git will retrieve all the files associated with the repository and will copy the
 We can clone any public repositories, we don't need any kind of permission.
 
 _p.s._ `git clone` is a standard git command, it can be used to clone repositories that are hosted anywhere, not just on GitHub.
-
-<br>
 
 ## GitHub Flow
 
@@ -74,8 +64,6 @@ _Basic workflow used with GitHub:_
 
 By sticking to this workflow, team members are able to isolate their work and avoid any conflicting code from being merged.
 
-<br>
-
 ## GitHub Repos
 
 - **Public Repos** - are accessible to everyone on the internet.
@@ -87,5 +75,3 @@ By sticking to this workflow, team members are able to isolate their work and av
 - **GitHub Gists** - are a simple way to share code snippets and useful fragmets with others.
 
 - **GitHub Pages** - are public (static) webpages that are hosted and published via GitHub.
-
-<br>

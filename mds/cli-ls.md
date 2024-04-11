@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # The `ls` command
 
 - `ls` list all the files and directories inside the working directory.
@@ -13,8 +11,6 @@
 1. `-a` lists all contents, including hidden files and directories.
 2. `-l` lists all contents of a directory in long format, as well as the file permissions.
 3. `-t` orders files and directories by the time they were last modified and additional details.
-
-<div></div>
 
 - `ls -a` using an option
 - `ls -alt` combining options
@@ -32,5 +28,3 @@
 5. The **size** of the file in bytes.
 6. The **date & time** that the file was last modified.
 7. The **name** of the file or directory.
-
-<br>

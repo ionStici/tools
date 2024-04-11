@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # GitHub: Issues & Projects
 
 Two GitHub features that make it easier to track tasks.
@@ -37,5 +35,3 @@ Example of a project with no repo: [GitHub's public roadmap project](https://git
 - After filling out the name and description of the new project -> Choose the project template we want to use.
 
 - Once the board is created, [add issues and pull requests](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/tracking-work-with-project-boards/adding-issues-and-pull-requests-to-a-project-board) to it.
-
-<br>

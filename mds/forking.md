@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # Forking a Repository
 
 **Forking a Repository on GitHub** - making a copy of a repo into your own account so that you can modify the project freely.
@@ -22,8 +20,6 @@ git fetch upstream
 
 Then, our forked repo will become up to date with the parent repo.
 
-<br>
-
 ## Fork & Clone Workflow
 
 1. I **fork** the original project repo on GitHub
@@ -36,8 +32,6 @@ Then, our forked repo will become up to date with the parent repo.
 
 5. I **push up** my new feature branch to my forked repo (usually caled "origin")
 
-6. I **open a pull** request to the original project repo containing the new work on my forked repo
+6. I **open a pull request** to the original project repo containing the new work on my forked repo
 
 7. Hopefully **the pull request is accepted** and my changes are merged in.
-
-<br>

@@ -1,15 +1,4 @@
-[&larr; Back](./README.md)
-
 # Fetch and Pull
-
-## Table of Content
-
-- [Fetching](#fetching)
-- [Pulling](#pulling)
-- [Cloning / Remote Branches](#cloning--remote-branches)
-- [Overview](#overview)
-
-<br>
 
 ## Fetching
 
@@ -24,8 +13,6 @@ Fetching allows us to download changes from a remote repository, but those chang
 For example, `git fetch origin master` would retrieve the latest information from the master branch on the origin remote repository.
 
 Again, this command will not merge changes from the remote into your local repo, it brings those changes into a remote branch.
-
-<br>
 
 ## Pulling
 
@@ -42,8 +29,6 @@ Just like with git merge, it matters where we run this command from. Whatever br
 Pulls can result in merge conflicts.
 
 If we run `git pull` without specifying a particular remote or branch to pull from, git assumes the following: (1) remote will default to origin. (2) branch will default to whatever tracking connection is configured for your current branch.
-
-<br>
 
 ## Cloning / Remote Branches
 
@@ -72,27 +57,3 @@ For example, you've cloned a repository, we have all the data and Git history fo
 By default, the `master` branch is already tracking `origin/master`.
 
 If we want to work on `bigfix` remote branch, run `git switch bugfix` to create a new local branch from the remote branch of the same name. This will create a local `bugfix` branch and set it up to track the remote branch `origin/bugfix`.
-
-Don't use `git checkout origin/bugfix` - would result in detached HEAD.
-
-<br>
-
-## Overview
-
-**`git fetch`**
-
-- Gets changes from remote branch(es)
-- Updates the remote-tracking branches with the new changes
-- Does not merge changes onto your current HEAD branch
-- Safe to do at anytime
-
-<br>
-
-**`git pull`**
-
-- Gets changes from remote branch(es)
-- Updates the current branch with the new changes, merging them in
-- Can result in merge conflicts
-- Not recommended if you have uncommitted changes.
-
-<br>

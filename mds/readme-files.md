@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # Readme Files
 
 A README file is often the first item a visitor will see when visiting a GitHub repository. It should include clarification information about the project.
@@ -18,4 +16,4 @@ Keep README files brief but detailed. README should always be up-to-date and sel
 
 Tip: Write engaging README’s. Make sure they include easy-to-follow details for your project. This improves your documentation skills and makes you a better developer and communicator of code.
 
-<br>
+<!-- Project Documentation -->

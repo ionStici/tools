@@ -1,16 +1,4 @@
-[&larr; Back](./README.md)
-
-# Git
-
-## Table of Content
-
-- [Git Introduction](#git-introduction)
-- [Git and GitHub Differences](#git-and-github-differences)
-- [Git Configuration](#git-configuration)
-
-<br>
-
-## Git Introduction
+# Git Introduction
 
 - **Git** - Version Control System
 - **Version Control System** - a software that tracks and manages changes to files over time.
@@ -24,8 +12,6 @@ Git is _(primarily)_ a **Terminal Tool**. To use it, we run various git commands
 **Git History:** Linus Torvalds is the creator and main developer behind Linux and Git. The first official Git release came in 2005.
 
 **Who Uses Git:** Engineers and Coders, Tech-Adjacent Roles like Designers (for collaborating reasons), Governments, Scientists, Writiers, Anyone (keeping a dairy, drafting PhD).
-
-<br>
 
 ## Git and GitHub Differences
 
@@ -41,10 +27,8 @@ After finishing the Git repository on our local machine, we can upload the histo
 | Git is maintained by Linux                  | GitHub is maintained by Microsoft                |
 | Git can manage source code history          | GitHub is a hosting service for git repositories |
 | Git was released in 2005                    | GitHub was launched in 2008                      |
-| focused on version control and code sharing | focused on centralized source code hosting       |
+| Focused on version control and code sharing | Focused on centralized source code hosting       |
 | Git has no user management feature          | GitHub has a built-in user management feature    |
-
-<br>
 
 ## Git Configuration
 
@@ -56,8 +40,7 @@ After finishing the Git repository on our local machine, we can upload the histo
 git config --global user.name "John"
 git config --global user.email "me@example.com"
 git config user.name // check the configured name
+git config --global core.editor "nano" // configure default editor
 ```
 
 When we get to GitHub, you’ll want your Git email address to match your GitHub account.
-
-<br>

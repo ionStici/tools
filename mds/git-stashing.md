@@ -1,38 +1,30 @@
-[&larr; Back](./README.md)
-
 # Git Stash
 
-Git won't let us switch branches if it detects potential uncommitted conflicts.
+**Git Stashing** - temporarily shelve changes from the working directory so that you can work on something else, and then come back and re-apply them later on.
 
-**Stashing** - stash uncommitted changes so that we can return to them later.
+- `git stash` takes all uncommitted changes (staged or unstaged) and saves them on a stack of unfinished changes that you can reapply at any time.
 
-- `git stash` save changes that you are not yet ready to commit, then come back later.
+  Stashing will leave you with a clean working directory, meaning it will look like the state of the last commit.
 
-  Running `git stash` will take all uncommitted changes (staged or unstaged) and tash them, reverting the changes in your working copy.
+- `git stash -u` use the `-u` option to tell `git stash` to include untracked (unstaged) files, in addition to the tracked ones.
 
-  In stash mode, we can switch branches, create new commits, etc.
+- `git stash pop` applies to the working directory the changes from the most recently created stash (also it will remove the stash from the stash list).
 
-- `git stash pop` remove the most recently stashed changes in your stash and re-apply them to your working copy.
+  If there are conflicts, you will need to resolve them.
 
-- `git stash apply` apply whatever is stashed away, without removing it from the stash. Useful if you want to apply stashed changes to multiple branches.
+- `git stash apply` it applies the stash, but it doesn't remove the stash from the stash list. **Usecase:** if you want to apply stashed changes to multiple branches.
 
-- `git stash -u` use the `-u` option to tell git stash to include untracked files.
+- We can add multiple stashes on the stash stack. They will be stashed in the order you added them.
 
-  Untracked files are not included in the stash without `-u` option.
+- `git stash list` displays the list of stashed changesets. Each entry is listed with an index, starting with `stash@{0}` for the latest stash.
 
-- You can add multiples stashes onto the stack of stashes. They will all be stashed in the order you added them.
+- `git stash clear` deletes all the stashes recorded in the stash list.
 
-  `git stash list` to view all stashes.
+- `git stash apply stash@{n}` applies a specific stash from your stash list, where `n` is the index of the stash. **Usecase:** when you have multiple stashes and want to apply one that is not the most recent.
 
-  `git stash clear` clear out all stashes.
+- `git stash drop stash@{n}` removes a particular stash from the stash list without applying it.
 
-  `git stash apply stash@{2}` apply a particular stash instead of just the most recent stash.
-
-  `git stash frop stash@{2}` delete a particular stash.
-
-<br>
-
-## Stashing
+## Stashing Workflow
 
 While working on a file, you find a small bug in a separate file from a previous commit that needs to be fixed before you continue.
 
@@ -41,5 +33,3 @@ While working on a file, you find a small bug in a separate file from a previous
   At this point, you can switch branches and do work elsewhere, then commit.
 
 - `git stash pop` restore the previous code you were working on (once the bug is fixed).
-
-<br>

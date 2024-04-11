@@ -1,5 +1,3 @@
-[&larr; Back](./README.md)
-
 # The .gitignore file
 
 `.gitignore` is a plain text file that instructs git to intentionally ignore certain files.
@@ -35,10 +33,6 @@ The forward slash `/` specifies that we are ignoring a directory.
 
 `.gitignore` is usually placed in the root directory of the repository.
 
-The file names inside can be written relative to the its location.
-
-<br>
-
 ## gitignore patterns
 
 [**gitignore patterns**](https://git-scm.com/docs/gitignore#_pattern_format)
@@ -52,5 +46,3 @@ The file names inside can be written relative to the its location.
   But we cannot negate a file inside an ignored directory.
 
 _p.s._ When we create a new repository on GitHub, we have the option to add a premade `.gitignore` file from a list of templates.
-
-<br>
