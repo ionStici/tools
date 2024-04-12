@@ -5,7 +5,7 @@
 - [CLI Exercises](./mds/cli-exercise.md)
 - [Git Exercises](./mds/git-project.md)
 - [GitHub Exercises](./mds/gh-exercise.md)
-<!-- - [GitHub Repository](./mds/gh-repo-todos.md) -->
+- [Repo Essentials](./mds/gh-repo-todos.md)
 
 ## Git
 
@@ -49,12 +49,13 @@
 
 <div></div>
 
-- [Issues & Projects](./mds/github-issues-projects.md)
-- [GitHub CLI](./mds/github-cli.md)
+- [GitHub Issues](./mds/gh-issues.md)
+- [GitHub Projects](./mds/gh-projects.md)
 
 <div></div>
 
 - [Code Reviews](https://google.github.io/eng-practices/)
+- [GitHub CLI](./mds/github-cli.md)
 - [GitHug Actions](./mds/github-actions.md)
 
 ## Essentials

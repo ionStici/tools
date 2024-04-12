@@ -30,6 +30,41 @@ Create **branches** to experiment with versions of a project. We can work with a
 - `git merge branch_name` merge changes from a branch to master
 - `git branch -d branch_name` delete a branch
 
+## Branch Strategy
+
+Isolate your work into different types of branches.
+
+- **Primary branches :** `main` and `develop`
+- **Supporting branches :** `feature`, `release`, `hotfix`
+
+<div></div>
+
+- `main` : The main branch where the source code reflects production-ready state
+- `develop` : Integration branch for features, corrections, and other enhancements
+- `feature` : Branches created from `develop` for new features
+- `release` : Branches created from `develop`, for preparing a new production release
+- `hotfix` : Branches from `main` for quick corrections to production issues
+
+### Six Principles of an effective branching strategy
+
+1. Any code in the `main` branch should be deployable
+
+   The other branches should contain in-progress work that will be merged into `main` when the work is finished and properly reviewed
+
+2. To work on something new, create a descriptively named branch off of `main`
+
+   Create branches for each new feature, bug fix, or release. Use clear naming conventions, for example:
+
+   `feature/feature-name`, `bugfix/bug-description`, `release/version-number`
+
+3. Commit to that branch and regularly push your work to the same named branch on the remote
+
+4. When you need feedback or help, or you think the branch is ready for merging, open a pull request
+
+5. Merge only after the pull request has been reviewed and approved
+
+6. Once it is merged into `main`, you can and should deploy immediately
+
 ## Merge Conflict
 
 **A Git Fast-Forward** is when the branch we want to merge is ahead of the main branch.
