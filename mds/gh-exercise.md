@@ -56,5 +56,3 @@
 5. Create a new branch and make a commit
 6. Push the branch to the forked "origin" remote
 7. Open a pull request to the original project repo containing the new work from your forked repo
-
-## Part 5 - Issues and Projects

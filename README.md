@@ -1,11 +1,11 @@
 # Git and GitHub
 
-## Refresh
+## Refresher
 
 - [CLI Exercises](./mds/cli-exercise.md)
 - [Git Exercises](./mds/git-project.md)
 - [GitHub Exercises](./mds/gh-exercise.md)
-- [GitHub Repository](./mds/gh-repo-todos.md)
+<!-- - [GitHub Repository](./mds/gh-repo-todos.md) -->
 
 ## Git
 
@@ -86,9 +86,7 @@
 
 ## VS Code
 
-- [Visual Studio Code](./mds/vs-code.md)
-
-<!-- npm and npm scripts -->
+- [Visual Studio Code](./mds/vscode.md)
 
 ## Homebrew
 
