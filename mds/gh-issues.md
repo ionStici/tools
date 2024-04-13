@@ -2,26 +2,18 @@
 
 [About Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
 
-<br>
-<br>
-<br>
+**GitHub Issues** are a tool used within GitUb repositories to track all types of work - from bugs and enhancements to questions and general tasks. They function like a to-do list but are integrated with your project's codebase.
 
-## The Issues Tag
+**Key Features:**
 
-Built-in GitHub tracking tool for bugs, errors, potential small feature changes for projects living inside a repo. Collaborators of the repo can see what needs to be worked on (open issues) as well as which tasks were resolved (closed issues).
+- **Tracking Bugs and Tasks:** Users can create issues to track anything that needs attention.
+- **Labels and Tags:** Issues can be categorized using labels to denote priority, category, or any other classification.
+- **Assignees:** Issues can be assigned to specific team memebers, making it clear who is responsible for what task.
+- **Milestones:** Groups of issues can be bundled under a milestone to track progress on a collection of related tasks, like those needed for a specific version of your software.
 
-The issues board acts as a forum for all the collaborators of a repo. Users of a project can submit and discuss bugs they've encountered.
+**How to Use:**
 
-### Labels
+1. Go to the "Issues" tab within your repository
+2. Create a new issue, fill in a title, a detailed description, assign it, label it, and if applicable, link it to a milestone.
 
-We use **labels** to organize different types of issues.
-
-e.g. `bug` and `feature` are common labels used to differentiate between errors and new features.
-
-### Creating an issue
-
-Click `New Issue` button from issue tag, then set the title and content of the issue.
-
-Keep the title epecific but to the point. For descriptions, repositories often have their own guidelines.
-
-Once the issue is posted and now open, collaborators and other github users can add to the discussion and reference this issue in other issues and pull requests.
+Once the issue is posted and now open, collaborators and other github users can join the discussion and reference this issue in other issues and pull requests.

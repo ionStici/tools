@@ -4,6 +4,9 @@
 
 - [CLI Exercises](./mds/cli-exercise.md)
 - [Git Exercises](./mds/git-project.md)
+
+<div></div>
+
 - [GitHub Exercises](./mds/gh-exercise.md)
 - [Repo Essentials](./mds/gh-repo-todos.md)
 
@@ -45,16 +48,16 @@
 <div></div>
 
 - [Pull Requests](./mds/pull-requests.md)
-- [Forking a Repo](./mds/forking.md)
-
-<div></div>
-
 - [GitHub Issues](./mds/gh-issues.md)
-- [GitHub Projects](./mds/gh-projects.md)
 
 <div></div>
 
-- [Code Reviews](https://google.github.io/eng-practices/)
+- [GitHub Projects](./mds/gh-projects.md)
+- [Set up Projects](./mds/gh-projects-workflow.md)
+
+<div></div>
+
+- [Forking a Repo](./mds/forking.md)
 - [GitHub CLI](./mds/github-cli.md)
 - [GitHug Actions](./mds/github-actions.md)
 
@@ -62,7 +65,11 @@
 
 - [Markdown](./mds/markdown.md)
 - [README Files](./mds/readme-files.md)
+
+<div></div>
+
 - [Open Source](./mds/open-source.md)
+- [Code Reviews](https://google.github.io/eng-practices/)
 
 ## Terminal
 

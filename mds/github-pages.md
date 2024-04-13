@@ -1,12 +1,12 @@
 # GitHub Pages
 
-[**GitHub Pages**](https://pages.github.com/) - free hosting service.
+[**GitHub Pages**](https://pages.github.com/) - hosting service.
 
 After you set up hosting using GitHub Pages, future changes you push will be automatically deployed.
 
 ## Setup
 
-To deploy a project, got to repo settings, click "Pages", at the "Branch" section switch from "None" to "main", and click "Save".
+To deploy a project, go to repo settings, click "Pages", at the "Branch" section switch from "None" to "main", and click "Save".
 
 - **User Site** - You get one user site per GitHub account. This is where you could host a portfolio site or some form of personal website. The default url is based on your GitHub username, following this patterns: `username.github.io` though you can change this.
 
