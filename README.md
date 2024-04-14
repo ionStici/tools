@@ -1,36 +1,10 @@
 # Git and GitHub
 
-## Refresher
+- [git](./mds/git/README.md)
 
-- [CLI Exercises](./mds/cli-exercise.md)
-- [Git Exercises](./mds/git-project.md)
-
-<div></div>
-
-- [GitHub Exercises](./mds/gh-exercise.md)
-- [Repo Essentials](./mds/gh-repo-todos.md)
-
-## Git
-
-- [Introduction](./mds/git-intro.md)
-- [Git Basics](./mds/git-basics.md)
-
-<div></div>
-
-- [Git Branching](./mds/git-branching.md)
-- [Git Backtracking](./mds/git-backtracking.md)
-
-<div></div>
-
-- [Git Stashing](./mds/git-stashing.md)
-- [Git Rebase](./mds/git-rebase.md)
-
-<div></div>
-
-- [Remote and Push](./mds/git-remote-push.md)
-- [Fetch and Pull](./mds/git-fetch-pull.md)
-
-<div></div>
+<br>
+<br>
+<br>
 
 - [The .gitignore file](./mds/git-ignore.md)
 - [Git Aliases](./mds/git-aliases.md)
@@ -39,6 +13,37 @@
 
 - [Git Tags](./mds/git-tags.md)
 - [About Git](./mds/about-git.md)
+
+<div></div>
+<div></div>
+<div></div>
+
+## Refresher
+
+- [CLI Exercises](./mds/cli-exercise.md)
+
+<div></div>
+
+- [GitHub Exercises](./mds/gh-exercise.md)
+- [Repo Essentials](./mds/gh-repo-todos.md)
+
+## Terminal
+
+- [CLI Introduction](./mds/command-line-interface.md)
+- [The `ls` command](./mds/cli-ls.md)
+
+<div></div>
+
+- [CLI Navigation](./mds/cli-navigation.md)
+- [CLI Manipulation](./mds/cli-manipulation.md)
+
+<div></div>
+
+- [Redirecting Input / Output](./mds/cli-redirect.md)
+- [CL Env Configuration](./mds/cl-env-config.md)
+
+<!-- - [Helper Commands](./mds/cli-helper-commands.md) -->
+<!-- - [iTerm2 (rec.)](https://iterm2.com/) -->
 
 ## GitHub
 
@@ -70,32 +75,3 @@
 
 - [Open Source](./mds/open-source.md)
 - [Code Reviews](https://google.github.io/eng-practices/)
-
-## Terminal
-
-- [CLI Introduction](./mds/command-line-interface.md)
-- [The `ls` command](./mds/cli-ls.md)
-
-<div></div>
-
-- [CLI Navigation](./mds/cli-navigation.md)
-- [CLI Manipulation](./mds/cli-manipulation.md)
-- [Redirecting Input / Output](./mds/cli-redirect.md)
-
-<div></div>
-
-- [CL Env Configuration](./mds/cl-env-config.md)
-- [Helper Commands](./mds/cli-helper-commands.md)
-- [iTerm2 (rec.)](https://iterm2.com/)
-
-## Vim
-
-- [Vim Introduction](./mds/vim.md)
-
-## VS Code
-
-- [Visual Studio Code](./mds/vscode.md)
-
-## Homebrew
-
-- [Homebrew](./mds/brew.md)

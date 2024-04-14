@@ -1,6 +1,6 @@
 # Git Branching
 
-Create **branches** to experiment with versions of a project. We can work with a branch only, and not affecting the **master** default branch until we decide to merge our changes. Initially, the git repo has only the **master** or **main** branch.
+Create **branches** to experiment with versions of a project. We can work with a branch only, and not affecting the **master** default branch until we decide to merge our changes. Initially, the git repo has only the **master** branch.
 
 - `git branch` will show in which branch we are
 

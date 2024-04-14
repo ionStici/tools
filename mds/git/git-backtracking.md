@@ -18,13 +18,13 @@ If you want to go back to an old commit and make some changes:
 
 1. `git checkout [commit-hash]` will make HEAD point to a particular previous commit (detached HEAD state).
 
-2. `git branch -d new-branch` creates a new branch from the detached HEAD state and switches to it, this will result in HEAD pointing back to a branch.
+2. `git branch -c new-branch` creates a new branch from the detached HEAD state and switches to it, this will result in HEAD pointing back to a branch.
 
 3. Commit the required changes to `new-branch` and switch to **master** branch.
 
 4. `git merge new-branch --no-edit` merge your work into the master branch (without prompting for a merge commit message).
 
-In summary, we reverted to an old commit, created a new branch at that point, made changes, and merged these changes bac into the **master** branch.
+In summary, we reverted to an old commit, created a new branch at that point, made changes, and merged those changes back into the **master** branch.
 
 ### Discard Changes
 

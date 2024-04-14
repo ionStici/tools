@@ -32,7 +32,7 @@ After finishing the Git repository on our local machine, we can upload the histo
 
 ## Git Configuration
 
-`git --version` command to see if git is installed, or [Install Git](https://git-scm.com/)
+`git --version` see if git is installed, otherwise [Install Git](https://git-scm.com/)
 
 **Configuring Git Name & Email** that Git will associate with your work:
 

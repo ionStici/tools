@@ -19,11 +19,11 @@ _p.s._ Do not initiate a git repo inside of a repo, because git tracks a directo
 
 ## Git Workflow
 
-A Git project can be thought of as having 3 parts:
+A **git** project can be thought of as having 3 parts:
 
 1. **Working Directory:** where we are currently working on the project, before git tracking.
-2. **Staging Area:** where you'll list changes you make to the working directory.
-3. **Repository:** where git permanently stores those changes as different versions of the project.
+2. **Staging Area (index):** where you will list the changes you want git to start tracking.
+3. **Repository:** where git permanently stores those index changes as different versions of the project.
 
 ## Git Basic Commands
 
@@ -41,7 +41,7 @@ A Git project can be thought of as having 3 parts:
 
   _Messages:_ Atomic Commits, Write in the present tense, Meaningful and Concise messages.
 
-- **`git log`** view the commit history of a branch.
+- **`git log`** view the commit history of the current branch.
 
   `git log --oneline` lists the commit history in one line format.
 
@@ -72,13 +72,13 @@ With this command, git replaces the whole previous commit with the current one. 
 
 - **`git diff branch1..branch2`** list changes between branches.
 
-- **`git diff commit1..commit2`** compare 2 commits, provide the commit hashes of the commits.
+- **`git diff commit1..commit2`** compare 2 commits, provide the hashes of the commits.
 
 ## git show
 
-`git show 1929376` show details of the specified commit.
+`git show 1929376` show details of a specified commit.
 
-## Overview
+## Summary
 
 - `git init` creates a new Git repository
 - `git status` inspects the contents of the working directory and staging area

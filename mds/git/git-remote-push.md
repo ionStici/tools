@@ -1,6 +1,6 @@
 # git remote
 
-Before we can push anything up to GitHub, we need to tell Git about our remote repository on GitHub. We need to setup a "destination" to push up to.w
+Before we can push anything up to GitHub, we need to tell Git about our remote repository on GitHub. We need to setup a "destination" to push up to.
 
 In Git we refer to these "destinations" as remotes. Each remote is simply a URL where a hosted repository lives.
 
@@ -35,3 +35,5 @@ We need to specify the remote we want to push up to AND the specific local branc
 `git push origin main` push up the "main" branch to the "origin" remote.
 
 We can separately push branches up to the remote origin. From here, others can review our branch and merge our work into the main branch, making it part of the definitive project version.
+
+<!-- git push -u origin main -->

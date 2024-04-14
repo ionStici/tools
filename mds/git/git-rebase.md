@@ -8,7 +8,7 @@
 - The original history of both branches remains intact and visible.
 - Commonly used in scenarios where you want to incorporate changes from one branch into another while keeping the history.
 
-Suppose you have two branches, **feature** and **master**.
+Suppose you have two branches, **feature** and **master**:
 
 ```
 A - - B - - C  master
@@ -16,7 +16,7 @@ A - - B - - C  master
               D - - E  feature
 ```
 
-After you `git merge feature` while on `master`, it looks like this:
+After `git merge feature`, the commit history will look like this:
 
 ```
 A - - B - - C - - - - F  master
@@ -30,10 +30,9 @@ Here, `F` is a new merge commit.
 
 Rebasing is used to integrate (not combine) commits from a branch to another.
 
-- Rebasing rewrites the commit history by applying the commits from a branch onto the tip of another branch.
-- It makes history linear by placing all the commits from the rebased branch sequentially before the current tip of the branch.
+- Rebasing rewrites the commit history by applying the commits from one branch to the top of another branch.
 - No new merge commits are created if there are no conflicts.
-- Preferred in situations where you want a cleaner, linear history. It's also used for cleaning up local commits before pushing them to a shared repository.
+- Preferred in situations where you want a cleaner, linear history.
 
 ```
 A - - B - - C  master
@@ -53,7 +52,7 @@ This will lead to:
 A - - B - - C - D' - E'  master
 ```
 
-Internally, Git accomplishes this by creating new commits and applying them to the specified base, so `D'` and `E'` are actually entirely new commits.
+Internally, Git accomplishes this by creating new commits and applying them to the specified base, this means that `D'` and `E'` are actually entirely new commits.
 
 ## Rebasing as a cleanup tool
 
@@ -61,9 +60,9 @@ Using `git rebase` we can rewrite, delete, rename, even reorder commits (before 
 
 `git rebase -i HEAD~4`
 
-Running git rebase with the `-i` option will enter the interactive mode, which allows us to edit commits, add files, drop commits, etc. We also specify how far back we want to rewrite commits.
+Running `git rebase` with the `-i` option will enter "interactive mode", which allows us to edit commits, add files, drop commits, etc. `HEAD~4` indicates how far back we want to go and edit.
 
-Here we are not rebasing onto another branch, instead, we are rebasing a series of commits onto the HEAD they currently are based on.
+Here we are not rebasing onto another branch, instead we are rebasing a series of commits onto the HEAD that they currently are based on.
 
 In our text editor, we'll see a list of commits alongside a list of commands that we can choose from.
 

@@ -1,4 +1,4 @@
-# Git Project
+# Git Exercises
 
 ## Part 1 - Fundamentals
 

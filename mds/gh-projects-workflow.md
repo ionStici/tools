@@ -10,7 +10,7 @@ _Set up columns that represent different stages of the development process. Colu
 
 Here you gather all incoming tasks such as new features, bug fixes, or improvements that need to be addressed (column for new tasks that have been identified but not yet started).
 
-- **Purpose:** To capture all tasks that need attention.
+- **Purpose:** To capture all tasks that need attention (backlog).
 - **Actions:** Tasks remain here until they are fully scoped and assigned.
 
 ### 2. Design

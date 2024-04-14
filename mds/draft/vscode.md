@@ -32,3 +32,18 @@ Connect VS Code with your GitHub account to sync your settings
 
 - **Prettier** - to automatically format code. [Link→](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - **Live Server** - to create a live preview for the current project. [Link→](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+<div></div>
+
+- **Emmet** -
+  [Link→](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+## Terminology
+
+**Code Editor :** application used by developers to write code. Advantages: Langauge-specific syntax highlighting, easier to read and understand, automatic code formatting and error catching helpers, etc.
+
+**IDE** _(Integrated Development Environment)_ : application that provides comprehensive features to edit, compile and debug your code.
+
+[**Visua Studio Code**](https://code.visualstudio.com/) : code editor, open source, IDE-like features, supported by a large community including Microsoft.
+
+**Development Environment :** set of tools you use to code projects.
