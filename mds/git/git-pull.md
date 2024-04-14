@@ -1,18 +1,4 @@
-# Fetch and Pull
-
-## Fetching
-
-Fetching allows us to download changes from a remote repository, but those changes will not be automatically integrated into our working files.
-
-`git fetch <remote>` command fetches branches and history from a specific remote repository. It only updates remote tracking branches.
-
-`git fetch origin` would fetch all changes from the origin remote repository.
-
-`git fetch <remote> <branch>` fetch a specific branch from a remote.
-
-For example, `git fetch origin master` would retrieve the latest information from the master branch on the origin remote repository.
-
-Again, this command will not merge changes from the remote into your local repo, it brings those changes into a remote branch.
+# Git Pull
 
 ## Pulling
 
@@ -30,9 +16,11 @@ Pulls can result in merge conflicts.
 
 If we run `git pull` without specifying a particular remote or branch to pull from, git assumes the following: (1) remote will default to origin. (2) branch will default to whatever tracking connection is configured for your current branch.
 
-## Cloning / Remote Branches
+## Cloning and Remote Branches
 
-After cloning a remository, we get 2 branches:
+`git clone <repo-url>` copy an entire git repo from a remote source to your local machine.
+
+After cloning a repository, we get 2 branches:
 
 - `master` a regular branch reference, I can move this around myself.
 

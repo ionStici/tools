@@ -8,3 +8,5 @@ Using **git aliases**, we can wrap a sequence of git commands into shorter and c
 git config --global alias.br "branch"
 git br feature
 ```
+
+git config --global alias.a '!git add . && git status'

@@ -1,22 +1,8 @@
 # Git and GitHub
 
-- [git](./mds/git/README.md)
+- [Git](./mds/git/README.md)
 
-<br>
-<br>
-<br>
-
-- [The .gitignore file](./mds/git-ignore.md)
-- [Git Aliases](./mds/git-aliases.md)
-
-<div></div>
-
-- [Git Tags](./mds/git-tags.md)
-- [About Git](./mds/about-git.md)
-
-<div></div>
-<div></div>
-<div></div>
+<!--  -->
 
 ## Refresher
 
