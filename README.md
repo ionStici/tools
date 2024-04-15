@@ -1,52 +1,23 @@
-# Git and GitHub
+# Tools
 
-- [Git](./mds/git/README.md)
+- [Terminal](./mds/cli/README.md)
+- [Git : VCS](./mds/git/README.md)
 
-<!--  -->
+<!--
 
-## Refresher
-
-- [CLI Exercises](./mds/cli-exercise.md)
-
-<div></div>
+## GitHub
 
 - [GitHub Exercises](./mds/gh-exercise.md)
 - [Repo Essentials](./mds/gh-repo-todos.md)
 
-## Terminal
-
-- [CLI Introduction](./mds/command-line-interface.md)
-- [The `ls` command](./mds/cli-ls.md)
-
-<div></div>
-
-- [CLI Navigation](./mds/cli-navigation.md)
-- [CLI Manipulation](./mds/cli-manipulation.md)
-
-<div></div>
-
-- [Redirecting Input / Output](./mds/cli-redirect.md)
-- [CL Env Configuration](./mds/cl-env-config.md)
-- [Helper Commands](./mds/cli-helper-commands.md)
-- [iTerm2 (rec.)](https://iterm2.com/)
-- [fish shell (rec.)](https://fishshell.com/)
-
-## GitHub
-
 - [GitHub Intro](./mds/github-intro.md)
 - [GitHub Pages](./mds/github-pages.md)
-
-<div></div>
 
 - [Pull Requests](./mds/pull-requests.md)
 - [GitHub Issues](./mds/gh-issues.md)
 
-<div></div>
-
 - [GitHub Projects](./mds/gh-projects.md)
 - [Set up Projects](./mds/gh-projects-workflow.md)
-
-<div></div>
 
 - [Forking a Repo](./mds/forking.md)
 - [GitHub CLI](./mds/github-cli.md)
@@ -61,3 +32,5 @@
 
 - [Open Source](./mds/open-source.md)
 - [Code Reviews](https://google.github.io/eng-practices/)
+
+-->

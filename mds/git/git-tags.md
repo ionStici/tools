@@ -26,7 +26,7 @@ Versions consists of 3 numbers separated by dots.
 
 - **Example:** `2.5.1` - major / minor / patch
 
-- **Early stages:** `0.x.x` - signals that the software is in its early stages of development, meaning initial development, where the software is being built and might be unstable or incomplete.
+- **Early stages:** `0.0.1` - signals that the software is in its early stages of development, meaning initial development, where the software is being built and might be unstable or incomplete.
 
 ## Tags in Practice
 
@@ -34,9 +34,7 @@ Versions consists of 3 numbers separated by dots.
 
 - `git tag -l keyword` search for tags that match a particular pattern using `-l` option.
 
-- `git checkout <tag>` view the state of a repo at a particular tag. This puts us in detached HEAD.
-
-<hr>
+- `git checkout <tag>` (detached HEAD) view the state of the repository at a particular tag.
 
 - `git tag <tagname>` create a lightweight tag, referring to the current HEAD commit.
 

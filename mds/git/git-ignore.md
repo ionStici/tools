@@ -24,7 +24,7 @@ thumbs.db
 node_modules/
 ```
 
-Blank lines are ignores and lines starting with `#` are treated as comments.
+Blank lines are ignored and lines starting with `#` are treated as comments.
 
 These files will never be committed regardless of their location in the project.
 
@@ -40,7 +40,7 @@ The forward slash `/` specifies that we are ignoring a directory.
 
 - `*.html` ignore all files ending with the `.html` extension.
 
-- `secret*` would match any file starting with `secret` such as `secret_data.txt`
+- `secret-*` would match any file starting with `secret-` such as `secret-data.txt`
 
 - `!public/index.html` **negation** as a prefix to negate any file that would otherwise be ignored.
 
