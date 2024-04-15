@@ -2,21 +2,24 @@
 
 _Command Line Interface_
 
+- [CLI Refresher](./cli-refresher.md)
+
+<div></div>
+
+- [CLI Introduction](./cli.md)
+- [The list Command](./cli-ls.md)
+
+<div></div>
+
+- [CLI Navigation](./cli-navigation.md)
+- [CLI Manipulation](./cli-manipulation.md)
+
+<div></div>
+
+- [Redirecting](./cli-redirect.md)
+- [Configurations](./cl-env-config.md)
+
+<div></div>
+
 - [iTerm2 (rec.)](https://iterm2.com/)
 - [fish shell (rec.)](https://fishshell.com/)
-
-<!--
-
-- [CLI Exercises](./mds/cli-exercise.md)
-
-- [CLI Introduction](./mds/command-line-interface.md)
-- [The `ls` command](./mds/cli-ls.md)
-
-- [CLI Navigation](./mds/cli-navigation.md)
-- [CLI Manipulation](./mds/cli-manipulation.md)
-
-- [Redirecting Input / Output](./mds/cli-redirect.md)
-- [CL Env Configuration](./mds/cl-env-config.md)
-- [Helper Commands](./mds/cli-helper-commands.md)
-
--->

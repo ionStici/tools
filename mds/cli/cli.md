@@ -60,3 +60,21 @@ Windows has a different CLI, called **Command Prompt**.
 Because of the strength of the open source community and the tools they provide, mastering **Bash** is a better investment than mastering Command Prompt.
 
 For windows we should install **git bash** instead.
+
+## Helper Commands
+
+- `clear` clear the terminal, aesthetic reasons.
+
+- `date` shows the current date.
+
+- `history` outputs the history of commands that were entered in the current session.
+
+- `open file.txt` open the indicated file or directory.
+
+- `code project` opens the directory in your default code editor.
+
+- `echo "Hello"` prints the string.
+
+- `tab` key can be used to autocomplete a command or a file/directory name.
+
+- `↑↓` the up and down arrows can be used to cycle through your previous commands.

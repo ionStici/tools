@@ -1,4 +1,4 @@
-# CLI Exercises
+# CLI Refresher
 
 ## Part 1
 

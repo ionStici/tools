@@ -23,7 +23,13 @@
 6. Merge the "feature" branch into "master"
 7. Delete the "feature" branch
 
-## Part 3 - Backtracking
+## Part 3 - Rebasing
+
+1. Create a new branch and make a commit on it
+2. Rebase the new branch on "master"
+3. Log the commit history and spot the details
+
+## Part 4 - Backtracking
 
 1. Move HEAD to a previous commit and identify what changed
 2. Create a new branch, list all branches, observe "HEAD detached at"
@@ -44,12 +50,6 @@
 3. Peform a hard reset
 4. Spot the differences
 
-## Part 4 - Rebasing
-
-1. Create a new branch and make a commit on it
-2. Rebase the new branch on "master"
-3. Log the commit history and spot the details
-
 ## Part 5 - Stashing
 
 1. Perform 3 git stashes
@@ -65,8 +65,8 @@
 Configure and use the following aliases:
 
 ```
-aa = add .
-cm = commit =m
+a = add . && git status
+cm = commit -m
 ```
 
 ## Part 7 - Tags
@@ -74,6 +74,7 @@ cm = commit =m
 1. Create a lightweight tag
 2. Create an annotated tag on a particular commit
 3. List all tags
-4. Move HEAD at a particular commit using a tag
-5. Delete a tag
-6. Push tags to a remote
+4. Use `git show` to inspect the annotated tag
+5. Move HEAD at a particular commit using a tag
+6. Delete a tag
+7. Push tags to a remote

@@ -1,4 +1,4 @@
-# CLI Navigation Commands
+# CLI Navigation
 
 - `pwd` **"print working directory"** - outputs the name of the directory you are currently in.
 

@@ -40,6 +40,10 @@ Versions consists of 3 numbers separated by dots.
 
 - `git tag -a <tagname>` create an annotated tag. Use `-m` option to pass a message directly.
 
+- `git show <tagname>` display the tag annotation, the corresponding commit information, and a diff of the changes that were committed in that tag.
+
+- `git tag -v <tagname>` only for the annotation and commit data, without the diff
+
 - `git tag <tagname> <commit-hash>` tag a particular commit using the commit hash.
 
 - `git tag -f <tagname>` force a tag.
