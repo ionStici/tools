@@ -2,46 +2,40 @@
 
 ## Pulling
 
-`git pull` another command we can use to retrieve changes from a remote repository.
+`git pull` does what `git fetch` does, and then it merges the changes into your local branch.
 
-`git pull = git fetch + git merge` Unlike fetch, pull updates our HEAD branch with whatever changes are retrieved from the remote.
+Essentially, `git pull` is a combination of `git fetch` followed by `git merge`. This means that when you execute `git pull`, git will first fetch the latest changes from the remote repository (updating the remote-tracking branches) and then immediately merge the changes into the current branch you are on.
 
-`git pull <remote> <branch>` specify a particular remote and branch we want to pull.
+- `git pull` pull changes from the default tracked repository and branch
+- `git pull origin main` pull changes from a specific remote and branch
 
-`git pull origin master` would fetch the latest information from the origin's master branch and merge those changes into our current branch.
+## Options and Variants
 
-Just like with git merge, it matters where we run this command from. Whatever branch we run it from is where the changes will be merged into.
+- `git pull --rebase` rebase the local commits on top of the remote branch instead of merging.
 
-Pulls can result in merge conflicts.
+- `git pull --tags` pull tags from the remote.
 
-If we run `git pull` without specifying a particular remote or branch to pull from, git assumes the following: (1) remote will default to origin. (2) branch will default to whatever tracking connection is configured for your current branch.
+## Resolving Conflicts
 
-## Cloning and Remote Branches
+1. If a `git pull` results in conflicts, you must manually resolve these conflicts.
 
-`git clone <repo-url>` copy an entire git repo from a remote source to your local machine.
+2. Git will mark the files and you will need to edit these files to resolve the conflicts.
 
-After cloning a repository, we get 2 branches:
+3. After resolving, you add the resolved files with `git add`, and then you can continue with a `git commit` to finalize the merge.
 
-- `master` a regular branch reference, I can move this around myself.
+## Differences Between git fetch and git pull
 
-- `origin/master` This is a **"Remote Tracking Branch"**. It's a reference to the state of the master branch on the remote. I can't move this myself. It's like a bookmark pointing to the last known commit on the master branch on origin.
+### 1. Change to Working Directory
 
-### Remote Tracking Branches
+- `git fetch` does not change your working directory. Your current working code remains the same, and you can decide to merge later manually.
+- `git pull` changes your working directory by automatically merging changes from the remote.
 
-They follow this pattern `<remote>/<branch>`
+### 2. Control Over Merging
 
-`origin/master` references the state of the master branch on the remote repo named _origin_.
+- With `git fetch`, you can review the changes fetched from the remote repository before deciding to merge them into your branch.
+- `git pull` provides less control since it fetches and merges in a single command.
 
-`git branch -r` to view the remote branches our local repo knows about.
+### 3. Use Case
 
-We can make local commits and the `master` branch reference will update, but `origin/master` remote reference will stay the same.
-
-### Remote Branches
-
-For example, you've cloned a repository, we have all the data and Git history for the project at that moment in time. However, that does not mean it's all in my workspace. The github repo has a branch called `bugfix`, but when I run `git branch` I don't see it on my machine. All I see is the `master` branch.
-
-`git branch -r` to view the remote branches our local repo knows about.
-
-By default, the `master` branch is already tracking `origin/master`.
-
-If we want to work on `bigfix` remote branch, run `git switch bugfix` to create a new local branch from the remote branch of the same name. This will create a local `bugfix` branch and set it up to track the remote branch `origin/bugfix`.
+- Use `git fetch` when you want to see the updates on the remote repository but might want to merge those changes at a later time or not at all.
+- Use `git pull` when you are ready to incorporate the changes from the remote repository into your local working files immediately.

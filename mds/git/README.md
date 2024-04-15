@@ -20,15 +20,15 @@
 <div></div>
 
 - [Remote and Push](./git-remote-push.md)
-- [Git Pull](./git-pull.md)
 - [Git Fetch](./git-fetch.md)
+- [Git Pull](./git-pull.md)
 
 <div></div>
 
-- [Git Aliases]()
-- [Git Tags]()
+- [Git Aliases](./git-aliases.md)
+- [Git Tags](./git-tags.md)
 
 <div></div>
 
-- [The gitignore file]()
-- [About Git]()
+- [The gitignore file](./git-ignore.md)
+- [About Git](./git-about.md)
