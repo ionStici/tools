@@ -27,9 +27,9 @@
 
 - [Redirecting Input / Output](./mds/cli-redirect.md)
 - [CL Env Configuration](./mds/cl-env-config.md)
-
-<!-- - [Helper Commands](./mds/cli-helper-commands.md) -->
-<!-- - [iTerm2 (rec.)](https://iterm2.com/) -->
+- [Helper Commands](./mds/cli-helper-commands.md)
+- [iTerm2 (rec.)](https://iterm2.com/)
+- [fish shell (rec.)](https://fishshell.com/)
 
 ## GitHub
 

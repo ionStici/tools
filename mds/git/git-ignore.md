@@ -1,4 +1,4 @@
-# The .gitignore file
+# The `.gitignore` file
 
 `.gitignore` is a plain text file that instructs git to intentionally ignore certain files.
 
@@ -20,6 +20,7 @@ thumbs.db
 # macOS OS file
 .DS_Store
 
+# Dependencies
 node_modules/
 ```
 
