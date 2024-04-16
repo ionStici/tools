@@ -12,22 +12,22 @@
 
 ## Operations with Remote-tracking Branches
 
-### 1. Checking out a Remote Branch Locally
+### 1. Track a Remote Branch Locally
 
-If you want to work on a branch that exists on the remote but not locally, you can check it out, which will set up a new local branch to track the remote branch.
+If you want to work on a branch that exists on the remote but not locally, you can set up a local branch to track the remote branch.
 
 ```
-git checkout -b feature-branch origin/feature-branch
+git branch branch_name origin/branch_name
 ```
 
-This command creates a local branch named `feature-branch` that tracks the remote `origin/feature-branch`.
+This command creates a local branch named `branch_name` that tracks the remote `origin/branch_name`.
 
 ### 2. Merging Changes
 
 If you fetched changes in a branch and want to merge them into your local branch (e.g. merging updates from `origin/main` into your local `main` branch), you would:
 
 ```
-git checkout main
+git switch main
 git merge origin/main
 ```
 

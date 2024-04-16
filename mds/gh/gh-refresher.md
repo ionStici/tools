@@ -2,17 +2,17 @@
 
 ## Part 1 - Remotes
 
-1. Create a local repository
+1. Create a local repository and make an initial commit
 2. Create 2 more branches and make a commit on each
 
 <div></div>
 
 3. Create a new repository on GitHub
-4. With the GitHub repo you created, add it as remote to your local repo (name it "work")
+4. With the GitHub repo you created, add it as remote to your local repo (name it `origin`)
 
 <div></div>
 
-5. Rename the "master" branch to "main" and push the local repo to its remote (set upstream)
+5. Rename the `master` branch to `main` and push the local repo to its remote (set upstream)
 6. View existing remotes
 
 <div></div>
@@ -22,30 +22,48 @@
 
 <div></div>
 
-9. Rename the remote to "big-project"
+9. Delete the remote tracking branch you pushed at step 7
 10. Delete the remote from your local repository
+
+<div></div>
+
+11. Merge both branches you have in your local repository
+12. Add again the remote and push the progress
 
 ## Part 2 - Fetching and Pulling
 
-1. Create a new local repo and set the remote with the project above
-2. Pull the "main" branch from "work" remote (so that merge will happen)
+1. Hard reset your project to the first commit
+2. Compare your local branch with the remote tracking branch using `diff`
 
 <div></div>
 
-3. Fetch the "dev" branch from the "work" remote
-4. Switch to "dev" branch to synchronize the "dev" branch to your local repo
+3. Set up a `dev` local branch to track `origin/main`
+4. Merge `origin/main` or the `dev` local branch into `main`
 
 <div></div>
+
+5. Delete the `dev` branch and perform a hard reset again
+6. Pull the `main` branch from `origin` (so that merge will happen)
 
 ## Part 3 - Pull Request
 
-1. Create a "dev" branch and make a commit
-2. Puss the "dev" branch to the remote
-3. Open a pull request on the "dev" branch. Give a title that explains the purpose of the pull request. Add a description that reflects the thought process behind the new branch. Add a commend after submitting the PR.
-4. Add a new commit on the "dev" branch, then push "dev" to the remote. Check it on GitHub at the PR section.
-5. Merge the pull request, then delete the "dev" branch from the GitHub UI
-6. Pull the "main" branch from the remote
-7. Delete the "Work/dev" from your local repo using the `-dr` option
+1. Create a `dev` branch and make a commit
+2. Push the `dev` branch to the remote
+
+<div></div>
+
+3. Open a pull request on the `dev` branch. Give a title that explains the purpose of the pull request. Add a description that reflects the thought process behind the new branch. Add a commend after submitting the PR.
+4. Add a new commit on the `dev` branch, then push `dev` to the remote. Check it on GitHub at the PR section.
+
+<div></div>
+
+5. Create an issue and link it to the pull request
+6. Merge the pull request, then delete the `dev` branch using the GitHub UI
+
+<div></div>
+
+7. Pull the `main` branch from the remote
+8. Delete the `origin/dev` branch from your local repo using the `-dr` option
 
 ## Part 4 - Forking
 
