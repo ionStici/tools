@@ -38,6 +38,8 @@ How do we get our code on GitHub?
 
 - At this point, you should be able to see your local repo hosted on GitHub.
 
+- Note that the configured git `user.email` must match the GitHub profile email.
+
 ## Cloning
 
 We can clone a remote repository hosted on GitHub, all we need is the repo URL.
@@ -52,7 +54,7 @@ _p.s._ `git clone` is a standard git command, it can be used to clone repositori
 
 ## GitHub Flow
 
-Following a specific workflow allows the project to more in more orderly way.
+Following a specific workflow allows the project to progress in a more orderly way.
 
 _Basic workflow used with GitHub:_
 
@@ -75,3 +77,17 @@ By sticking to this workflow, team members are able to isolate their work and av
 - **GitHub Gists** - are a simple way to share code snippets and useful fragmets with others.
 
 - **GitHub Pages** - are public (static) webpages that are hosted and published via GitHub.
+
+## GitHub Pages
+
+[**GitHub Pages**](https://pages.github.com/) : hosting service.
+
+After you set up hosting using GitHub Pages, future changes you push will be automatically deployed.
+
+### Setup
+
+To deploy a project, go to repo settings, click "Pages", at the "Branch" section switch from "None" to "main", and click "Save".
+
+**User Site** - You get one user site per GitHub account. This is where you could host a portfolio site or some form of personal website. The default url is based on your GitHub username, following this patterns: `username.github.io` though you can change this.
+
+**Project Sites** - You get unlimited project sites. Each GitHub repo can have a corresponding hosted website. It's as simple as telling GitHub which specific branch contains the web content. The default urls follow this pattern: `username.github.io/repo-name`

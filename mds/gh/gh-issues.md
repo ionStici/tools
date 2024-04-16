@@ -2,7 +2,7 @@
 
 [About Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
 
-**GitHub Issues** are a tool used within GitUb repositories to track all types of work - from bugs and enhancements to questions and general tasks. They function like a to-do list but are integrated with your project's codebase.
+**GitHub Issues** are a tool used within GitHub repositories to track all types of work - from bugs and enhancements to questions and general tasks. They function like a to-do list but are integrated with your project's codebase.
 
 **Key Features:**
 

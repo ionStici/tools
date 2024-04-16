@@ -2,32 +2,35 @@
 
 _Git Repository Hosting_
 
-<!--
+- [GitHub Refresher](./gh-refresher.md)
+- [Repo Essentials](./gh-repo-todos.md)
 
-## GitHub
+<div></div>
 
-- [GitHub Exercises](./mds/gh-exercise.md)
-- [Repo Essentials](./mds/gh-repo-todos.md)
+- [GitHub Introduction](./gh-intro.md)
+- [Forking a Repo](./gh-forking.md)
 
-- [GitHub Intro](./mds/github-intro.md)
-- [GitHub Pages](./mds/github-pages.md)
+<div></div>
 
-- [Pull Requests](./mds/pull-requests.md)
-- [GitHub Issues](./mds/gh-issues.md)
+- [GitHub Issues](./gh-issues.md)
+- [Pull Requests](./gh-pull-requests.md)
 
-- [GitHub Projects](./mds/gh-projects.md)
-- [Set up Projects](./mds/gh-projects-workflow.md)
+<div></div>
 
-- [Forking a Repo](./mds/forking.md)
-- [GitHub CLI](./mds/github-cli.md)
-- [GitHug Actions](./mds/github-actions.md)
+- [GitHub Projects](./gh-projects.md)
+- [Set up Projects](./gh-projects-workflow.md)
 
-## Essentials
+<div></div>
 
-- [Markdown](./mds/markdown.md)
-- [README Files](./mds/readme-files.md)
+- [GitHug Actions](./gh-actions.md)
+- [GitHub CLI](./gh-cli.md)
 
-- [Open Source](./mds/open-source.md)
+<div></div>
+
+- [Markdown](./markdown.md)
+- [README Files](./readme-files.md)
+
+<div></div>
+
+- [Open Source](./open-source.md)
 - [Code Reviews](https://google.github.io/eng-practices/)
-
--->

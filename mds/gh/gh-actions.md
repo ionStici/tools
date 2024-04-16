@@ -14,7 +14,7 @@
 
 1. Add a YAML file to the `.github/workflows` directory in your repo.
 2. Define the events that trigger the workflow.
-3. Specify the jobs and steps within these jobs that should be executed.
+3. Specify the jobs and steps that should be executed.
 
 **Example Workflow:**
 

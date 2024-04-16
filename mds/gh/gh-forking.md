@@ -1,6 +1,6 @@
 # Forking a Repository
 
-**Forking a Repository on GitHub** - making a copy of a repo into your own account so that you can modify the project freely.
+**Forking a Repository on GitHub** - making a copy of a public repository into your own account so that you can modify the project freely.
 
 To fork a GitHub repository - **click `Fork` on the repo page**.
 
