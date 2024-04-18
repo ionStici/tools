@@ -1,5 +1,7 @@
 # Vim Introduction
 
+## Essentials
+
 - [Vim Website](https://www.vim.org/download.php) & [Vim GitHub](https://github.com/vim/vim)
 - `vim` start vim in your terminal
 - `vim file.txt` open a file in vim
@@ -12,12 +14,12 @@
 - `:version` check vim version
 - `man vim` learn more about the `vim` command
 
-### Insert Mode
+## Insert Mode
 
 - Type `i` to enter insert mode
 - Type `<Esc>` to exit insert mode
 
-### Open Multiple Windows
+## Open Multiple Windows
 
 - `vim -o2` open two horizontal windows
 - `vim -O2` open two vertical windows
@@ -28,6 +30,6 @@ To navigate between windows press `ctrl + w + h`
 | `h` left | `j` below | `k` above | `l` right |
 | -------- | --------- | --------- | --------- |
 
-### Suspending
+## Suspending
 
 Press `Ctrl + z` to suspend vim while in the middle of editing. Alternatively you can run `:stop` or `:suspend`. To return to the suspended Vim, run `fg` in the terminal.

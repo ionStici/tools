@@ -1,5 +1,7 @@
 # Visual Studio Code
 
+Code Snippets
+
 ## Resources
 
 - [Visual Studio Code](https://code.visualstudio.com/)

@@ -67,3 +67,56 @@ Example of a **development workflow** using Sass and live-server.
 <!-- **A Build Process** is a sequence of tasks we perform automatically after we finish developing a project, or a certain feature of the project. The result of the build process is the final files ready for deployment. -->
 
 <br>
+
+[&larr; Back](./README.md)
+
+# Linting
+
+A **linter** is a tool that scans source code for potential issues, including syntax errors, faulty code structures, stylistic inconsistencies, and security.
+
+Linters can automatically detect missing semicolons or future security breaches early on during the development cycle to reduce the number of errors that need to be resolved during testing.
+
+Popular linters: [ESLint](https://eslint.org/) for JS and [Stylelist](https://stylelint.io/) for CSS.
+
+Linters provides a number of automated checks that help streamline software development.
+
+- **Syntax Errors:** Linters can automatically find and fix syntax errors before running your code, meaning fewer bugs to deal with during production.
+- **Problematic Code Structures:** Linters can also flag potentially problematic code structures, or “code smells”. These are weak points in your application design, such as unnecessarily long methods and duplicated code, that could result in future bugs and impaired app performance.
+- **Stylistic Code Conventions:** Linters also push developers to adhere to a consistent set of stylistic code standards, improving code readability and maintainability. Sticking to a consistent coding style saves time by enabling developers to focus on the application’s architecture and core logic rather than code aesthetics.
+- **Security:** Some linters, such as ESLint, can detect potential security vulnerabilities in your code to help you ensure that the application is secure and well-protected.
+
+<br>
+
+## ESLint
+
+Settings > ESLint: Run > onSave
+
+<br>
+
+```
+npx eslint --init
+```
+
+[&larr; Back](./README.md)
+
+# [Prettier](https://prettier.io/)
+
+**Prettier** is a code formatter that helps you format your code according to a set of rules.
+
+[Browse prettier options](https://prettier.io/docs/en/options.html)
+
+_Define prettier as the default formatter: Settings > Default Formatter > Prettier - Code formatter_
+
+For specific format options, create a `.prettierrc` config file where you will include your preferences.
+
+```js
+{
+    "singleQuote": true,
+    "arrowParents": "avoid",
+    "tabWidth": 4
+}
+```
+
+_These settings are for:_ using single quotes, arrow functions without parentheses, and 4 spaces for tab indentation.
+
+<br>
