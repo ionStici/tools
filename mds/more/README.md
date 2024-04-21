@@ -1,18 +1,10 @@
-# Dev's Tools
+# Dev Tools
 
 ## Setups
 
+- [macOS Setup](./macos-setup.md)
 - [Terminal Setup](./terminal-setup.md)
-
-## Essentials
-
-- [Homebrew](./brew.md)
-
-<div></div>
-
-## VS Code
-
-- [Visual Studio Code](./vscode.md)
+- [VS Code Setup](./vscode.md)
 
 ## Vim
 
@@ -20,8 +12,4 @@
 
 ## Npm
 
-- [Npm](./npm.md)
-
 ## Build Tools
-
-- [Vite](./vite.md)
