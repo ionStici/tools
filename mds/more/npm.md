@@ -1,122 +1,71 @@
-[&larr; Back](./README.md)
-
 # NPM
 
-**Node Package Manager (NPM)** is a package manager used for managing and distributing software packages written in JavaScript. It is the default package manager for **Node.js** (a JS runtime environment).
+[npm docs](https://docs.npmjs.com/)
 
-Before using **npm**, you need to install [**Node.js**](https://nodejs.org/en).
+**Node Package Manager (npm)** is the default package manager for **Node.js** (JavaScript runtime environment), it is used for managing and distributing software packages written in JavaScript.
 
-- Check if node is installed with `node -v`
-- Check if npm is installed with `npm -v`
+## Installing npm
 
-<!-- leaflet -->
-<!-- lodash -->
+**npm** is installed together with Node. Check if Node and npm are installed:
 
-<br>
+```bash
+node -v
+npm -v
+```
 
-## npm init
+## Basic npm Commands
 
-- Initialize **npm** with `npm init` inside your project directory.
+- `npm init` initialize npm in your project directory.
+- `package.json` file will be created which holds various metadata relevant to the project.
+- `npm install <package_name>` install a package under the `node_modules` directory in your project.
+- `npm install` (no arguments) install all dependencies defined in the `package.json` file.
+- `node_modules` directory contains the project's packages and dependencies.
+- `npm update` update all packages in the `node_modules` directory and their dependencies.
+- `npm uninstall <package_name>` remove a package from `node_modules`.
 
-- A `package.json` file will be created containing the definitions of our project.
+## package.json
 
-<br>
+`package.json` file is used to manage the project's dependencies and metadata.
 
-## npm install
+- `name` : The name of the project.
+- `version` : The project's current version.
+- `scripts` : A collection of command line scripts to run various tasks such as testing, building, etc.
+- `dependencies` : A list of npm packages that your project needs to run.
+- `devDependencies` : Packages that are only needed for development and testing.
 
-- Install Sass: `npm install sass --save-dev`
+When sharing a project, we skip the `node_modules` directory because it is too large. Instead, we include the `package.json` file which can be used to reproduce the exact development workflow from `node_modules` by running `npm install`. This will install the dependencies and devDependencies of the project specified in `package.json`.
 
-- The `--save-dev` option (or `-D`) indicates that the package we install is a tool for development, and it should be listed in _package.json_ under the field `"devDependencies"`.
+### dependencies and devDependencies
 
-- Install jQuery: `npm install jquery --save`
+- `npm install <package> --save` install and save a package as a **dependency**.
+- `npm install <package> --save-dev` (`-D` for short) install and save a package as a **dev dependency**.
 
-- The `--save` option informs that the package is a tool that offers programming functions, so it should be listed under the field `"dependencies"`
+If you want to remote the package name from `package.json` when you uninstall it, you must use these flags in the uninstall command as well.
 
-- Uninstall a pacakge: `npm uninstall jquery --save`
+`dependencies` are the packages your app needs to function correctly in production, such as programming functions. For example, `react` and `react-dom` are considered "dependencies" because they provide functionality required for your application to run in production.
 
-Right after we install any package, we get the `node_modules` directory which is responsible for making our packages work.
+`devDependencies` are packages necessary only during the development process, they are not needed when the application is running in production. For example, `vite` is used during development for bundling. Similarly `sass` is used during development to compile SCSS files to CSS.
 
-Why do we need to care about `dependencies` and `devDependencies` fields from the "package.json" file? To ease our development workflow.
-
-For example, in case we need to send our project to someone else, we should omit the "node_modules" folder which is too big. Using the "package.json" file and the data it contains we can reproduce the exact development workflow from "node_modules" by running `npm init` which will install the project's dependencies and devDependencies.
-
-<br>
- 
 ## npm scripts
 
-**A npm script** is a command defined in the project's `package.json` file that can be executed using the `npm run` command. npm scripts are used for automating common development tasks, such as running tests, building code, starting servers, or other custom workflows.
+**npm scripts** are commands that can be defined in the `package.json` file, and that can be executed in the terminal using the `npm run` command. npm scripts are used for automating common development tasks, such as running tests, bundling code, starting servers, or other custom workflows.
 
-```
-npm install sass npm-run-all -D
-```
+Scripts are defined in the `scripts` section of the `package.json` file. You can create custom script names and associate them with command line commands.
 
 ```json
-"scripts": {
-    "sass": "sass main.scss style.css -w",
-    "live": "live-server",
-    "dev": "npm-run-all --parallel sass live"
+{
+  "scripts": {
+    "custom-script-name": "package-name",
+    "dev": "vite",
+    "build": "vite build"
+  }
 }
 ```
 
-```
+**To run an npm script**, use the `npm run` command followed by the script name `dev`
+
+```bash
 npm run dev
 ```
 
-Example of a **development workflow** using Sass and live-server.
-
-<!-- **A Build Process** is a sequence of tasks we perform automatically after we finish developing a project, or a certain feature of the project. The result of the build process is the final files ready for deployment. -->
-
-<br>
-
-[&larr; Back](./README.md)
-
-# Linting
-
-A **linter** is a tool that scans source code for potential issues, including syntax errors, faulty code structures, stylistic inconsistencies, and security.
-
-Linters can automatically detect missing semicolons or future security breaches early on during the development cycle to reduce the number of errors that need to be resolved during testing.
-
-Popular linters: [ESLint](https://eslint.org/) for JS and [Stylelist](https://stylelint.io/) for CSS.
-
-Linters provides a number of automated checks that help streamline software development.
-
-- **Syntax Errors:** Linters can automatically find and fix syntax errors before running your code, meaning fewer bugs to deal with during production.
-- **Problematic Code Structures:** Linters can also flag potentially problematic code structures, or “code smells”. These are weak points in your application design, such as unnecessarily long methods and duplicated code, that could result in future bugs and impaired app performance.
-- **Stylistic Code Conventions:** Linters also push developers to adhere to a consistent set of stylistic code standards, improving code readability and maintainability. Sticking to a consistent coding style saves time by enabling developers to focus on the application’s architecture and core logic rather than code aesthetics.
-- **Security:** Some linters, such as ESLint, can detect potential security vulnerabilities in your code to help you ensure that the application is secure and well-protected.
-
-<br>
-
-## ESLint
-
-Settings > ESLint: Run > onSave
-
-<br>
-
-```
-npx eslint --init
-```
-
-[&larr; Back](./README.md)
-
-# [Prettier](https://prettier.io/)
-
-**Prettier** is a code formatter that helps you format your code according to a set of rules.
-
-[Browse prettier options](https://prettier.io/docs/en/options.html)
-
-_Define prettier as the default formatter: Settings > Default Formatter > Prettier - Code formatter_
-
-For specific format options, create a `.prettierrc` config file where you will include your preferences.
-
-```js
-{
-    "singleQuote": true,
-    "arrowParents": "avoid",
-    "tabWidth": 4
-}
-```
-
-_These settings are for:_ using single quotes, arrow functions without parentheses, and 4 spaces for tab indentation.
-
-<br>
+**Node:** You can chain scripts together using `&&` or handle more complex scenarios using other npm packages such as `npm-run-all`, etc.

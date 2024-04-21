@@ -30,9 +30,15 @@ After finishing the Git repository on our local machine, we can upload the histo
 | Focused on version control and code sharing | Focused on centralized source code hosting       |
 | Git has no user management feature          | GitHub has a built-in user management feature    |
 
-## Git Configuration
+## Git Configurations
 
 `git --version` see if git is installed, otherwise [Install Git](https://git-scm.com/)
+
+**Set the default branch to main instead of master:**
+
+```
+git config --global init.defaultBranch main
+```
 
 **Configuring Git Name & Email** that Git will associate with your work:
 

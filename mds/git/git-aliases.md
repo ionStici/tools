@@ -40,3 +40,9 @@ git config --global --unset user.email
 ```
 
 Deleting the `~/.gitconfig` file removes all your global settings, effectively resetting Git's global configuration to default.
+
+### Formatted alias for git log
+
+```
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
