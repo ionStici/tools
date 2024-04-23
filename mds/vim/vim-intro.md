@@ -1,8 +1,10 @@
 # Vim Introduction
 
+_Vim : Powerful text editor_
+
 ## Essentials
 
-- [Vim Website](https://www.vim.org/download.php) & [Vim GitHub](https://github.com/vim/vim)
+- [Vim Website](https://www.vim.org/download.php) & [Vim on GitHub](https://github.com/vim/vim) & [Learn Vim](https://github.com/iggredible/Learn-Vim)
 - `vim` start vim in your terminal
 - `vim file.txt` open a file in vim
 - `:quit` or `:q` to exit vim

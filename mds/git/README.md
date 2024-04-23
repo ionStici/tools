@@ -3,9 +3,6 @@
 _Version Control System_
 
 - [Git Refresher](./git-refresher.md)
-
-<div></div>
-
 - [Introduction](./git-intro.md)
 - [Git Fundamentals](./git-fundamentals.md)
 

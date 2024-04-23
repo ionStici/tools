@@ -3,6 +3,7 @@
 _Command Line Interface_
 
 - [CLI Refresher](./cli-refresher.md)
+- [Terminal Setup](./terminal-setup.md)
 
 <div></div>
 
@@ -18,8 +19,3 @@ _Command Line Interface_
 
 - [Redirecting](./cli-redirect.md)
 - [Configurations](./cl-env-config.md)
-
-<div></div>
-
-- [iTerm2 (rec.)](https://iterm2.com/)
-- [fish shell (rec.)](https://fishshell.com/)

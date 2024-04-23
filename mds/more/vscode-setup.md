@@ -104,6 +104,9 @@ Command + Shift + P -> Open settings.json
   "explorer.confirmDragAndDrop": false,
   "window.zoomLevel": 1,
 
+  // Markdown All in One
+  "markdown.extension.toc.updateOnSave": false,
+
   // line highlight
   "editor.renderLineHighlight": "all",
   "workbench.colorCustomizations": {
@@ -201,28 +204,11 @@ _Snippets -> Configure User Snippets -> New Global Snippets File_
     "body": ["console.log($1)"],
     "description": "console.log"
   },
-  "reactComponent": {
-    "prefix": "rfc",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "body": [
-      "function ${1:${TM_FILENAME_BASE}}() {",
-      "\treturn (",
-      "\t\t<div>",
-      "\t\t\t$0",
-      "\t\t</div>",
-      "\t)",
-      "}",
-      "",
-      "export default ${1:${TM_FILENAME_BASE}}",
-      ""
-    ],
-    "description": "React component"
-  },
   "importCSSModule": {
     "prefix": "csm",
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "body": ["import styles from './${TM_FILENAME_BASE}.module.css'"],
-    "description": "Import CSS Module as `styles`"
+    "body": ["import css from './${TM_FILENAME_BASE}.module.css'"],
+    "description": "Import CSS Module as `css`"
   }
 }
 ```
