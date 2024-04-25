@@ -34,7 +34,11 @@ Connect VS Code with your GitHub account to sync your settings
 
 - **Image Preview** - to display an image preview next to the code. [Link→](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
 - **Paste and Indent** - to automatically indent pasted code. [Link→](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
+
+<div></div>
+
 - **Path Intellisense** - to autocomplete filenames. [Link→](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+- **npm Intellisense** - autocomplete npm import statements [Link→](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
 
 <div></div>
 
@@ -103,6 +107,14 @@ Command + Shift + P -> Open settings.json
   "breadcrumbs.enabled": false,
   "explorer.confirmDragAndDrop": false,
   "window.zoomLevel": 1,
+
+  // Intellisense
+  "npm-intellisense.importES6": true,
+  "npm-intellisense.importQuotes": "'",
+  "npm-intellisense.importLinebreak": ";\r\n",
+  "npm-intellisense.importDeclarationType": "const",
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
 
   // Markdown All in One
   "markdown.extension.toc.updateOnSave": false,
@@ -212,3 +224,16 @@ _Snippets -> Configure User Snippets -> New Global Snippets File_
   }
 }
 ```
+
+Templates for repeating code patterns.
+
+## ESLint
+
+[ESLint](https://eslint.org/) is a static code analysis tool used to identify problematic patterns found in JavaScript code. It aims to make code more consistent and avoid bugs.
+
+```bash
+# install and configure ESLint
+npm init @eslint/config@latest
+```
+
+This command will guide you through setting up your ESLint config file.
