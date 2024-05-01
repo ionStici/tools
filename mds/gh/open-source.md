@@ -1,6 +1,6 @@
 # Open Source
 
-## Open Source Overview
+## Overview
 
 **Open Source Software** is software whose code is free to view, modify, and distribute. Developers can view the code, suggest changes, point out issues that need to be fixed. It is usually created and maintained by a community of volunteer software developers who collaborate on websites like GitHub.
 
@@ -18,13 +18,15 @@ On GitHub, we can configure which groups of people may view or make changes to t
 
 - **README.md** is the standard file for basic repository documentation: Title, summary, code snippet examples.
 
-- **LIECENSE.md** File is used to describe the licensing terms for the repository: restrictions for what circumstances it is allowed to be used.
+- **LICENSE.md** file is used to describe the licensing terms for the repository: restrictions for what circumstances it is allowed to be used.
 
-  Commonly used license: The MIT license. Resource: [ChooseALicense.com](https://choosealicense.com/)
+  Commonly used license: The MIT license. Resource: [ChooseALicense.com](https://choosealicense.com/).
+
+- **CONTRIBUTING.md** file for contributing guidelines, see: [example](https://contributing.md/example/).
 
 - **CODE_OF_CONDUCT.md** files contain policies regarding what behavior is acceptable or not.
 
-  Standard code of conduct: [Contributor Covenant](https://www.contributor-covenant.org/)
+  Standard code of conduct: [Contributor Covenant](https://www.contributor-covenant.org/).
 
 ### README.md Files in Open Source Projects
 
@@ -52,7 +54,7 @@ Three common types of issues:
 
 GitHub has an issue tracker built into every project, but some maintainers may choose to use different software such as [Jira](https://www.atlassian.com/software/jira) or [Trello](https://trello.com/). Before submitting an issue to an open source project, be sure to check out the project’s README for any specific instructions.
 
-A issue report template would look like this:
+An issue report template would look like this:
 
 ```
 ## Expected Behavior

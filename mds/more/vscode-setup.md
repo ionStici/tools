@@ -1,231 +1,113 @@
 # Visual Studio Code
 
-## Resources
-
+- [Install VS Code](https://formulae.brew.sh/cask/visual-studio-code)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [VS Code Docs](https://code.visualstudio.com/docs)
+- [Extensions for VS Code](https://marketplace.visualstudio.com/VSCode)
 
-## Terminology
+**Visual Studio Code** - code editor, open-source, IDE-like features, supported by a large community.
 
-**Code Editor :** application used by developers to write code. Advantages: Language-specific syntax highlighting, easier to read and understand, automatic code formatting and error catching helpers, etc.
+**Code Editor** - application used by developers to write code. Advantages: Language-specific syntax highlighting, easier to read and understand, automatic code formatting, error catching helpers, etc.
 
-**IDE** _(Integrated Development Environment)_ : application that provides comprehensive features to edit, compile and debug your code.
+**IDE** _(Integrated Development Environment)_ - application that provides comprehensive features to edit, compile, and debug code.
 
-[**Visual Studio Code**](https://code.visualstudio.com/) : code editor, open source, IDE-like features, supported by a large community including Microsoft.
+## VS Code Extensions (suggestions)
 
-## VS Code Settings (suggestions)
-
-Connect VS Code with your GitHub account to sync your settings
-
-- _Format On Save:_ **ON**
-- _Auto Save:_ **onFocusChange**
-- _Word Wrap:_ **OFF**
-- _File Icon Theme:_ **Seti** (Visual Studio Code)
-- _Tab Size:_ **2** (prettier have default indentation)
-- _Detect Indentation:_ **OFF** (to don't override "Tab Size")
-
-## VS Code Extensions
-
-- **Auto Close Tag** - to automatically close HTML tags. [Link→](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-- **Auto Rename Tag** - to automatically update matching HTML tags. [Link→](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-- **Color Highlight** - to highlight colors in CSS code. [Link→](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
 <div></div>
 
-- **Image Preview** - to display an image preview next to the code. [Link→](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
-- **Paste and Indent** - to automatically indent pasted code. [Link→](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
 <div></div>
 
-- **Path Intellisense** - to autocomplete filenames. [Link→](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-- **npm Intellisense** - autocomplete npm import statements [Link→](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
+- [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 
-<div></div>
-
-- **Live Server** - to create a live preview for the current project. [Link→](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-- **Emmet** - (built into VS Code) enhance coding in HTML. [Link→](https://docs.emmet.io/)
-- **styled-components** - Syntax highlighting and IntelliSense. [Link→](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
-
-<div></div>
-
-- **Prettier** - to automatically format code. [Link→](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- **Night Owl** - VS Code Theme. [Link→](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl)
-- **GitHub Theme** - VS Code Theme. [Link→](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
-
-<div></div>
-
-- **Better Comments** - create more human-friendly comments. [Link→](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-- **Highlight Matching Tag** - match opening and closing tags. [Link→](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
-- **Color Picker** - Helper with GUI to generate color codes. [Link→](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color)
-
-<div></div>
-
-- **ESLint** - Code analyzer. [Link→](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- **GitLens** - Visualize Git. [Link→](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-- **Code Spell Checker** - spell checker. [Link→](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-
-<div></div>
-
-- **Markdown All in One** - Markdown. [Link→](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-- **Markdown Preview Enhanced** - Markdown. [Link→](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
-- **vscode-icons** - Icons Theme. [Link→](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+...
 
 ## settings.json
 
-Command + Shift + P -> Open settings.json
+Command + Shift + P -> Open `settings.json`
 
 ```json
 {
-  // VS Code Settings
-  "editor.formatOnSave": true,
-  "files.autoSave": "onFocusChange",
-  "workbench.iconTheme": "vscode-icons",
-  "window.title": "${activeEditorMedium}",
-  "files.trimTrailingWhitespace": true,
-  "explorer.confirmDelete": false,
-  "explorer.compactFolders": false,
-  "workbench.colorTheme": "Night Owl",
-  "workbench.sideBar.location": "left",
-  "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": true,
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.restoreViewState": true,
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "editor.find.addExtraSpaceOnTop": true,
-  "editor.padding.top": 15,
-  "editor.stickyScroll.enabled": false,
-  "editor.fontFamily": "Hack Nerd Font Mono",
-  "editor.fontSize": 14,
-  "editor.tabSize": 2,
-  "editor.lineHeight": 1.75,
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": false,
-  "editor.renderWhitespace": "none",
-  "editor.scrollBeyondLastLine": true,
-  "editor.minimap.enabled": false,
-  "editor.find.seedSearchStringFromSelection": "never",
-  "breadcrumbs.enabled": false,
-  "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": 1,
+  // VS CODE SETTINGS
+  "editor.formatOnSave": true, // Automatically formats the code when you save the file.
+  "editor.formatOnPaste": true, // Automatically formats text immediately after it is pasted.
+  "editor.formatOnType": true, // Automatically formats the line after typing.
+  "files.autoSave": "onFocusChange", // Automatically saves your file when the editor loses focus.
+  "window.title": "${activeEditorMedium}", // Configures the window title based on the active editor's path.
+  "files.trimTrailingWhitespace": true, // Removes any whitespace at the end of a line automatically when saving a file.
+  "explorer.confirmDelete": false, // Disables the confirmation dialog when deleting files using the file explorer.
+  "explorer.compactFolders": false, //  Prevents the file explorer from compacting folders into single clickable paths.
+  "workbench.sideBar.location": "left", // Positions the sidebar on the left side of the window.
+  "workbench.startupEditor": "none", // No editor is open when VS Code starts.
+  "workbench.statusBar.visible": true, // Makes the status bar visible at the bottom of the editor.
+  "workbench.editor.enablePreview": false, // Opens files always in a permanent editor instead of in a preview mode.
+  "workbench.editor.restoreViewState": true, // Restores the last viewed state of the editor when reopening a file.
+  "editor.find.addExtraSpaceOnTop": true, // Adds extra space on top of the editor when using the Find feature.
+  "editor.padding.top": 15, // Adds a top padding of 15 pixels inside the editor.
+  "editor.stickyScroll.enabled": false, // Disables the feature where headers or important lines remain visible while scrolling.
+  "editor.insertSpaces": true, // Replaces tabs with spaces in the editor.
+  "editor.scrollBeyondLastLine": true, // Allows scrolling beyond the last line of the file.
+  "editor.minimap.enabled": false, // Disables the minimap view on the right side of the editor.
+  "editor.find.seedSearchStringFromSelection": "never", // Prevents pasting in the Find Widget from the editor selection.
+  "breadcrumbs.enabled": false, // Disables the breadcrumb navigation at the top of the editor.
+  "explorer.confirmDragAndDrop": false, // Disables the confirmation dialog when moving files or folders via drag and drop.
+  "window.zoomLevel": 0.5, // Sets the zoom level of the window
+  "editor.detectIndentation": false, // Disables automatic detection of tab settings based on opened files.
+  "editor.renderWhitespace": "none", // Does not render any whitespace characters in the editor.
 
-  // Intellisense
-  "npm-intellisense.importES6": true,
-  "npm-intellisense.importQuotes": "'",
-  "npm-intellisense.importLinebreak": ";\r\n",
-  "npm-intellisense.importDeclarationType": "const",
-  "typescript.suggest.paths": false,
-  "javascript.suggest.paths": false,
+  // TEXT PREFERENCES
+  "editor.fontFamily": "Hack Nerd Font Mono", // Sets the font family in the editor.
+  "terminal.integrated.fontFamily": "MesloLGS NF", // Sets the font family of the integrated terminal.
+  "editor.fontSize": 13, // Sets the font size in the editor to 14 pixels.
+  "editor.tabSize": 2, // Sets the number of spaces per tab in the editor to 2.
+  "editor.lineHeight": 1.7, // Sets the line height as a multiplier of the font size.
+  "terminal.integrated.fontSize": 16, // terminal font size
+  "terminal.integrated.lineHeight": 1.2, // terminal line height
+  "editor.wordWrap": "off", // No word wrap
 
-  // Markdown All in One
-  "markdown.extension.toc.updateOnSave": false,
+  // THEME
+  "workbench.colorTheme": "GitHub Dark Default", // Sets the color theme of the entire editor
+  "workbench.iconTheme": "material-icon-theme", // Sets the icons in the UI
 
-  // line highlight
-  "editor.renderLineHighlight": "all",
+  // LINE HIGHLIGHT
+  "editor.renderLineHighlight": "all", // Highlights both the gutter and the current line where the cursor is located.
   "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#223851"
+    "editor.lineHighlightBackground": "#223851" // Customizes the background color of the highlighted line
   },
 
-  // prettier
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid",
+  // PRETTIER
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Sets the default formatter
+  "prettier.singleQuote": true, // Single quotes by default
+  "prettier.arrowParens": "avoid", // Avoid parentheses for arrow functions with a single argument
 
-  // ESLint
-  "eslint.run": "onSave",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.fixAll.eslint": "explicit",
-    "source.fixAll.tslint": "explicit",
-    "source.addMissingImports": "explicit"
-  },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "javascript.validate.enable": false,
-  "javascript.updateImportsOnFileMove.enabled": "prompt",
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "js/ts.implicitProjectConfig.checkJs": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "editor.inlineSuggest.enabled": true,
+  // MARKDOWN
+  "markdown.extension.toc.updateOnSave": false, // Disables Markdown "Table of Contents" formatting
 
-  // Git & GitHub
-  "git.openRepositoryInParentFolders": "never",
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": true
-  },
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": true,
-    "scminput": false
-  },
+  // ESLINT
+  "eslint.run": "onSave", // Runs ESLint to check for issues when the file is saved.
+
+  // CODE SPELL CHECKER
   "cSpell.enableFiletypes": [
-    "!asciidoc",
-    "!c",
-    "!cpp",
-    "!csharp",
+    "mdx",
+    "html",
     "!css",
-    "!elixir",
-    "!erlang",
-    "!git-commit",
-    "!go",
-    "!graphql",
-    "!handlebars",
-    "!haskell",
-    "!html",
-    "!jade",
-    "!java",
+    "!scss",
+    "!json",
     "!javascript",
     "!javascriptreact",
-    "!json",
-    "!jsonc",
-    "!jupyter",
-    "!less",
-    "!php",
-    "!pug",
-    "!python",
-    "!restructuredtext",
-    "!rust",
-    "!scala",
-    "!scminput",
-    "!scss",
-    "!swift",
     "!typescript",
     "!typescriptreact",
-    "!vue",
-    "!yaml",
-    "!yml",
-    "mdx"
+    "!git-commit"
   ]
 }
 ```
-
-## Code Snippets
-
-_Snippets -> Configure User Snippets -> New Global Snippets File_
-
-```json
-{
-  "Print to console": {
-    "prefix": "cl",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "body": ["console.log($1)"],
-    "description": "console.log"
-  },
-  "importCSSModule": {
-    "prefix": "csm",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "body": ["import css from './${TM_FILENAME_BASE}.module.css'"],
-    "description": "Import CSS Module as `css`"
-  }
-}
-```
-
-Templates for repeating code patterns.
 
 ## ESLint
 
@@ -237,3 +119,119 @@ npm init @eslint/config@latest
 ```
 
 This command will guide you through setting up your ESLint config file.
+
+## VS Code and Emmet
+
+Emmet plugin for High-speed coding and editing in HTML.
+
+[Emmet Documentation](https://docs.emmet.io/)
+
+Support for Emmet snippets and expansion is built right into Visual Studio Code, no extension required.
+
+## Code Snippets
+
+Templates for repeating code patterns.
+
+_Snippets: Configure User Snippets -> New Global Snippets File_
+
+```json
+{
+  "printToConsole": {
+    "prefix": "cl",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": ["console.log($1)"],
+    "description": "console.log"
+  },
+  "reactComponent": {
+    "prefix": "rfc",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "function ${1:${TM_FILENAME_BASE}}() {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}",
+      ""
+    ],
+    "description": "React component"
+  },
+  "importCSSModule": {
+    "prefix": "csm",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": ["import styles from './${TM_FILENAME_BASE}.module.css'"],
+    "description": "Import CSS Module as `styles`"
+  },
+  "reactStyledComponent": {
+    "prefix": "rsc",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "body": [
+      "import styled from 'styled-components'",
+      "",
+      "const Styled${TM_FILENAME_BASE} = styled.$0``",
+      "",
+      "function ${TM_FILENAME_BASE}() {",
+      "\treturn (",
+      "\t\t<Styled${TM_FILENAME_BASE}>",
+      "\t\t\t${TM_FILENAME_BASE}",
+      "\t\t</Styled${TM_FILENAME_BASE}>",
+      "\t)",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}",
+      ""
+    ],
+    "description": "React styled component"
+  }
+}
+```
+
+<!--
+
+ - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+
+- [IntelliCode API Usage Examples](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples)
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+
+- [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+
+- [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+
+- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+
+- [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+
+- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+
+- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+
+- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+
+- https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+
+- https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions
+
+- https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight
+
+- https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview
+
+- https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent
+
+- https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense
+
+- https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components
+
+- https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
+
+- https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag
+
+- https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color
+
+-->
