@@ -3,7 +3,7 @@
 - [Install VS Code](https://formulae.brew.sh/cask/visual-studio-code)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [VS Code Docs](https://code.visualstudio.com/docs)
-- [Extensions for VS Code](https://marketplace.visualstudio.com/VSCode)
+- [VS Code Extensions](https://marketplace.visualstudio.com/VSCode)
 
 **Visual Studio Code** - code editor, open-source, IDE-like features, supported by a large community.
 
@@ -14,8 +14,14 @@
 ## VS Code Extensions (suggestions)
 
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+<div></div>
+
+- [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
+- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+
+<div></div>
 
 <div></div>
 
@@ -27,7 +33,70 @@
 - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 
-...
+<div></div>
+
+- [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [IntelliCode API Usage Examples](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples)
+
+<div></div>
+
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+- [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
+
+<div></div>
+
+- [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+<div></div>
+
+- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+
+<div></div>
+
+- [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+
+<div></div>
+
+- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+- [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
+
+<div></div>
+
+- [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+- [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
+
+<div></div>
+
+- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+
+<div></div>
+
+- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+- [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
+
+<div></div>
+
+- [Image preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
+- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+
+<div></div>
+
+- [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+- [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)
+
+<div></div>
+
+- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
+<div></div>
+
+- [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
+- [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 
 ## settings.json
 
@@ -122,11 +191,9 @@ This command will guide you through setting up your ESLint config file.
 
 ## VS Code and Emmet
 
-Emmet plugin for High-speed coding and editing in HTML.
+[Emmet](https://docs.emmet.io/) plugin for high-speed coding and editing in HTML.
 
-[Emmet Documentation](https://docs.emmet.io/)
-
-Support for Emmet snippets and expansion is built right into Visual Studio Code, no extension required.
+Support for Emmet snippets is built right into VS Code, no extension required.
 
 ## Code Snippets
 
@@ -188,50 +255,3 @@ _Snippets: Configure User Snippets -> New Global Snippets File_
   }
 }
 ```
-
-<!--
-
- - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-
-- [IntelliCode API Usage Examples](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples)
-
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-
-- [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
-
-- [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-
-- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-
-- [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
-
-- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
-
-- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-
-- [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-
-- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-
-- https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
-
-- https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions
-
-- https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight
-
-- https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview
-
-- https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent
-
-- https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense
-
-- https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components
-
-- https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
-
-- https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag
-
-- https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color
-
--->

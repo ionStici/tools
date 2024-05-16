@@ -69,3 +69,13 @@ npm run dev
 ```
 
 **Node:** You can chain scripts together using `&&` or handle more complex scenarios using other npm packages such as `npm-run-all`, etc.
+
+## Upgrade dependencies
+
+[npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
+
+```bash
+npm install -g npm-check-updates
+npm -u
+npm install
+```
