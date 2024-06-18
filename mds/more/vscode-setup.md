@@ -15,61 +15,11 @@
 
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [One Monokai Theme](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)
 
 <div></div>
 
-- [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
-- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
-
-<div></div>
-
-<div></div>
-
-- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-
-<div></div>
-
-- [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
-- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-
-<div></div>
-
-- [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-- [IntelliCode API Usage Examples](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples)
-
-<div></div>
-
-- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-- [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
-
-<div></div>
-
-- [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-
-<div></div>
-
-- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-- [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
-
-<div></div>
-
-- [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
-- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
-
-<div></div>
-
-- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
-- [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
-
-<div></div>
-
-- [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-- [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
-
-<div></div>
-
 - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
@@ -77,26 +27,13 @@
 
 - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 - [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
-
-<div></div>
-
-- [Image preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
-- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-
-<div></div>
-
-- [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
-- [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)
-
-<div></div>
-
-- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
-- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-
-<div></div>
-
-- [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
 - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+
+<div></div>
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
 
 ## settings.json
 
@@ -106,16 +43,11 @@ Command + Shift + P -> Open `settings.json`
 {
   // VS CODE SETTINGS
   "editor.formatOnSave": true, // Automatically formats the code when you save the file.
-  "editor.formatOnPaste": true, // Automatically formats text immediately after it is pasted.
-  "editor.formatOnType": true, // Automatically formats the line after typing.
   "files.autoSave": "onFocusChange", // Automatically saves your file when the editor loses focus.
-  "window.title": "${activeEditorMedium}", // Configures the window title based on the active editor's path.
-  "files.trimTrailingWhitespace": true, // Removes any whitespace at the end of a line automatically when saving a file.
   "explorer.confirmDelete": false, // Disables the confirmation dialog when deleting files using the file explorer.
   "explorer.compactFolders": false, //  Prevents the file explorer from compacting folders into single clickable paths.
-  "workbench.sideBar.location": "left", // Positions the sidebar on the left side of the window.
   "workbench.startupEditor": "none", // No editor is open when VS Code starts.
-  "workbench.statusBar.visible": true, // Makes the status bar visible at the bottom of the editor.
+  "workbench.statusBar.visible": false, // Hides the status bar at the bottom of the editor.
   "workbench.editor.enablePreview": false, // Opens files always in a permanent editor instead of in a preview mode.
   "workbench.editor.restoreViewState": true, // Restores the last viewed state of the editor when reopening a file.
   "editor.find.addExtraSpaceOnTop": true, // Adds extra space on top of the editor when using the Find feature.
@@ -142,7 +74,7 @@ Command + Shift + P -> Open `settings.json`
   "editor.wordWrap": "off", // No word wrap
 
   // THEME
-  "workbench.colorTheme": "GitHub Dark Default", // Sets the color theme of the entire editor
+  "workbench.colorTheme": "One Monokai", // Sets the color theme of the entire editor
   "workbench.iconTheme": "material-icon-theme", // Sets the icons in the UI
 
   // LINE HIGHLIGHT
@@ -153,28 +85,7 @@ Command + Shift + P -> Open `settings.json`
 
   // PRETTIER
   "editor.defaultFormatter": "esbenp.prettier-vscode", // Sets the default formatter
-  "prettier.singleQuote": true, // Single quotes by default
-  "prettier.arrowParens": "avoid", // Avoid parentheses for arrow functions with a single argument
-
-  // MARKDOWN
-  "markdown.extension.toc.updateOnSave": false, // Disables Markdown "Table of Contents" formatting
-
-  // ESLINT
-  "eslint.run": "onSave", // Runs ESLint to check for issues when the file is saved.
-
-  // CODE SPELL CHECKER
-  "cSpell.enableFiletypes": [
-    "mdx",
-    "html",
-    "!css",
-    "!scss",
-    "!json",
-    "!javascript",
-    "!javascriptreact",
-    "!typescript",
-    "!typescriptreact",
-    "!git-commit"
-  ]
+  "prettier.singleQuote": true // Single quotes by default
 }
 ```
 

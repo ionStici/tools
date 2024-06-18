@@ -76,6 +76,6 @@ npm run dev
 
 ```bash
 npm install -g npm-check-updates
-npm -u
+ncu -u
 npm install
 ```
