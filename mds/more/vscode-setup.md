@@ -13,27 +13,33 @@
 
 ## VS Code Extensions (suggestions)
 
-- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-- [One Monokai Theme](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 <div></div>
 
-- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
 <div></div>
 
-- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 - [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
 - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 
 <div></div>
 
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+<div></div>
+
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+
+<div></div>
+
 - [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 ## settings.json
 
@@ -41,51 +47,46 @@ Command + Shift + P -> Open `settings.json`
 
 ```json
 {
-  // VS CODE SETTINGS
   "editor.formatOnSave": true, // Automatically formats the code when you save the file.
   "files.autoSave": "onFocusChange", // Automatically saves your file when the editor loses focus.
+
+  "workbench.activityBar.location": "hidden", // Hide the activity bar
+  "workbench.statusBar.visible": false, // Hides the status bar at the bottom of the editor.
+  "breadcrumbs.enabled": false, // Disables the breadcrumb navigation at the top of the editor.
+  "editor.minimap.enabled": false, // Disables the minimap view on the right side of the editor.
+  "editor.stickyScroll.enabled": false, // Disables the feature where headers or important lines remain visible while scrolling.
+
+  "workbench.startupEditor": "none", // No editor is open when VS Code starts.
+  "explorer.confirmDragAndDrop": false, // Disables the confirmation dialog when moving files or folders via drag and drop.
   "explorer.confirmDelete": false, // Disables the confirmation dialog when deleting files using the file explorer.
   "explorer.compactFolders": false, //  Prevents the file explorer from compacting folders into single clickable paths.
-  "workbench.startupEditor": "none", // No editor is open when VS Code starts.
-  "workbench.statusBar.visible": false, // Hides the status bar at the bottom of the editor.
+
   "workbench.editor.enablePreview": false, // Opens files always in a permanent editor instead of in a preview mode.
   "workbench.editor.restoreViewState": true, // Restores the last viewed state of the editor when reopening a file.
-  "editor.find.addExtraSpaceOnTop": true, // Adds extra space on top of the editor when using the Find feature.
-  "editor.padding.top": 15, // Adds a top padding of 15 pixels inside the editor.
-  "editor.stickyScroll.enabled": false, // Disables the feature where headers or important lines remain visible while scrolling.
-  "editor.insertSpaces": true, // Replaces tabs with spaces in the editor.
-  "editor.scrollBeyondLastLine": true, // Allows scrolling beyond the last line of the file.
-  "editor.minimap.enabled": false, // Disables the minimap view on the right side of the editor.
+
+  "editor.find.addExtraSpaceOnTop": false, // Adds extra space on top of the editor when using the Find feature.
   "editor.find.seedSearchStringFromSelection": "never", // Prevents pasting in the Find Widget from the editor selection.
-  "breadcrumbs.enabled": false, // Disables the breadcrumb navigation at the top of the editor.
-  "explorer.confirmDragAndDrop": false, // Disables the confirmation dialog when moving files or folders via drag and drop.
-  "window.zoomLevel": 0.5, // Sets the zoom level of the window
-  "editor.detectIndentation": false, // Disables automatic detection of tab settings based on opened files.
-  "editor.renderWhitespace": "none", // Does not render any whitespace characters in the editor.
 
-  // TEXT PREFERENCES
-  "editor.fontFamily": "Hack Nerd Font Mono", // Sets the font family in the editor.
-  "terminal.integrated.fontFamily": "MesloLGS NF", // Sets the font family of the integrated terminal.
-  "editor.fontSize": 13, // Sets the font size in the editor to 14 pixels.
-  "editor.tabSize": 2, // Sets the number of spaces per tab in the editor to 2.
-  "editor.lineHeight": 1.7, // Sets the line height as a multiplier of the font size.
-  "terminal.integrated.fontSize": 16, // terminal font size
-  "terminal.integrated.lineHeight": 1.2, // terminal line height
-  "editor.wordWrap": "off", // No word wrap
+  "editor.scrollBeyondLastLine": true, // Allows scrolling beyond the last line of the file.
+  "editor.padding.top": 16, // Adds a top padding of 15 pixels inside the editor.
 
-  // THEME
-  "workbench.colorTheme": "One Monokai", // Sets the color theme of the entire editor
-  "workbench.iconTheme": "material-icon-theme", // Sets the icons in the UI
-
-  // LINE HIGHLIGHT
   "editor.renderLineHighlight": "all", // Highlights both the gutter and the current line where the cursor is located.
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#223851" // Customizes the background color of the highlighted line
   },
 
-  // PRETTIER
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // Sets the default formatter
-  "prettier.singleQuote": true // Single quotes by default
+  "window.zoomLevel": 0.5, // Sets the zoom level of the window
+  "editor.fontSize": 15, // Sets the font size in the editor to 14 pixels.
+  "editor.tabSize": 2, // Sets the number of spaces per tab in the editor to 2.
+  "editor.lineHeight": 1.7, // Sets the line height as a multiplier of the font size.
+  "editor.wordWrap": "off", // No word wrap
+
+  "terminal.integrated.fontSize": 16, // terminal font size
+  "terminal.integrated.lineHeight": 1.2, // terminal line height
+  "editor.renderWhitespace": "none", // Does not render any whitespace characters in the editor.
+
+  "workbench.iconTheme": "material-icon-theme", // Sets the icons in the UI
+  "editor.defaultFormatter": "esbenp.prettier-vscode" // Sets the default formatter
 }
 ```
 
