@@ -6,7 +6,7 @@ _Vim : Powerful text editor_
 
 - [Vim Website](https://www.vim.org/download.php) & [Vim on GitHub](https://github.com/vim/vim) & [Learn Vim](https://github.com/iggredible/Learn-Vim)
 - `vim` start vim in your terminal
-- `vim file.txt` open a file in vim
+- `vim file.txt` open files in vim
 - `:quit` or `:q` to exit vim
 - `:write` or `:w` save a file
 - `:w file.txt` save and name a new file
@@ -16,10 +16,11 @@ _Vim : Powerful text editor_
 - `:version` check vim version
 - `man vim` learn more about the `vim` command
 
-## Insert Mode
+## Modes
 
-- Type `i` to enter insert mode
-- Type `<Esc>` to exit insert mode
+- **Normal Mode:** Default mode for navigation and commands.
+- **Insert Mode:** Switch to insert mode with `i` to type text.
+- **Return to Normal Mode:** Press `<Esc>`
 
 ## Open Multiple Windows
 
@@ -32,6 +33,7 @@ To navigate between windows press `ctrl + w + h`
 | `h` left | `j` below | `k` above | `l` right |
 | -------- | --------- | --------- | --------- |
 
-## Suspending
+## Suspending Vim
 
-Press `Ctrl + z` to suspend vim while in the middle of editing. Alternatively you can run `:stop` or `:suspend`. To return to the suspended Vim, run `fg` in the terminal.
+- **Suspend Vim:** Press `Ctrl + z` or use `:suspend` or `:stop`
+- **Resume Vim:** In terminal, type `fg`
